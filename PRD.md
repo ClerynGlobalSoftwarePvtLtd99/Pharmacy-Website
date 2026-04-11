@@ -32,7 +32,7 @@
 - **Products Listing (Best Sellers):** Product cards featuring image, price, description, and "Buy/Enquire" functionality.
 - **About Us:** Summarizes the MOA's objectives: functioning in semi-regulated/non-regulated global markets, commitment to quality, research, and API manufacturing.
 - **Testimonials & Gallery:** Social proof and facility/product images.
-- **Contact Us:** Address (Delhi, India), direct email (`info@laytelifescience.com`), phone number, business hours, interactive Google Map embedded for Delhi, and an inquiry form.
+- **Contact Us:** Address (Delhi, India), direct email (`laytelifescience@gmail.com`), phone number, business hours, interactive Google Map embedded for Delhi, and an inquiry form.
 
 ### 3. Technical Requirements
 - **Frontend Stack:** HTML5, Tailwind CSS v3 (via CDN), Vanilla JS.
