@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ── WhatsApp Contact Form Handler with Validation ────────────────────────
   const contactForm = document.getElementById('contact-form');
-  const WHATSAPP_NUMBER = '919875674988'; // +91 60032 14247
+  const WHATSAPP_NUMBER = '916003214247'; // +91 60032 14247
 
   // Validation rules
   const rules = {
