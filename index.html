@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layte LifeScience Private
+        Limited - Pharmaceuticals</title>
+    <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Layte LifeScience Private
+Limited is a top and well known Pharmaceutical Products Dealer  Delhi. Quality driven pharmaceutical products.">
+    <meta name="keywords"
+        content="Pharmaceutical Products Dealer, Baidyapara, Delhi, Injectable Antibiotics, Syrups, Tonics">
+
+    <!-- Tailwind CSS v3 (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration for Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#11b3c3',
+                        'primary-hover': '#179397',
+                        secondary: '#e2cc15',
+                        dark: '#1a1a1a',
+                        light: '#f3f4f6'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 glass-panel">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="flex-shrink-0 flex items-center pr-4">
+                        <img class="h-16 w-auto object-contain rounded-md" src="images/logo.jpeg"
+                            alt="Layte LifeScience Logo">
+                    </a>
+                    <div class="hidden md:ml-6 md:flex md:space-x-8">
+                        <a href="#home"
+                            class="nav-link text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Home</a>
+                        <a href="#categories"
+                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Categories</a>
+                        <a href="#products"
+                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Products</a>
+                        <a href="#about"
+                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">About
+                            Us</a>
+                        <a href="#gallery"
+                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Gallery</a>
+                        <a href="#contact"
+                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center">
+                    <a href="#contact" class="btn-primary px-6 py-2 rounded-md font-medium text-sm">Enquire Now</a>
+                </div>
+                <div class="-mr-2 flex items-center md:hidden">
+                    <button type="button" id="mobile-menu-button"
+                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="pt-2 pb-3 shadow-inner">
+                <a href="#home"
+                    class="block pl-3 pr-4 py-2 border-l-4 border-primary text-base font-medium text-primary bg-indigo-50 font-roboto">Home</a>
+                <a href="#categories"
+                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">Categories</a>
+                <a href="#products"
+                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">Products</a>
+                <a href="#about"
+                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">About
+                    Us</a>
+                <a href="#gallery"
+                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">Gallery</a>
+                <a href="#contact"
+                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative bg-black hidden sm:block h-[80vh] min-h-[600px]">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover" src="images/Hero section image.jpg" alt="Pharmacy Header">
+            <div class="absolute inset-0 hero-gradient-overlay mix-blend-multiply" aria-hidden="true"></div>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
+            <div class="text-left w-full sm:w-2/3 lg:w-1/2 fadeInUp-on-scroll delay-100">
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl mb-4">
+                    <span class="block">Providing Quality Driven</span>
+                    <span class="block text-secondary">Pharmaceutical Products</span>
+                </h1>
+                <p class="mt-3 max-w-md text-base text-gray-200 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+                    Top Pharmaceutical Products Dealer located Delhi serving globally.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <div class="rounded-md shadow">
+                        <a href="#contact"
+                            class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-hover md:py-4 md:text-lg transition-colors">
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Hero -->
+    <header class="relative bg-black sm:hidden h-[60vh] min-h-[400px]">
+        <div class="absolute inset-0">
+            <img class="w-full h-full object-cover object-center" src="images/Hero section image for mobile.jpg"
+                alt="Pharmacy Header Mobile">
+            <div class="absolute inset-0 bg-black bg-opacity-60 mix-blend-multiply" aria-hidden="true"></div>
+        </div>
+        <div class="relative px-4 h-full flex flex-col justify-center text-center fadeInUp-on-scroll">
+            <h1 class="text-3xl font-extrabold text-white mb-3">
+                Providing Quality Driven<br>
+                <span class="text-secondary text-4xl">Pharmaceuticals</span>
+            </h1>
+            <a href="#contact"
+                class="inline-block px-6 py-3 mt-4 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-hover mx-auto">Enquire
+                Now</a>
+        </div>
+    </header>
+
+    <!-- Categories Section -->
+    <section id="categories" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fadeInUp-on-scroll">
+                <h2 class="text-sm font-semibold text-primary tracking-wide uppercase">Categories</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Our Product Range
+                </p>
+            </div>
+
+            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Category Item 1 -->
+                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-100">
+                    <div class="img-wrap w-full h-48 sm:h-56">
+                        <img src="images/categories/image1.webp" alt="Injectable Antibiotics"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Injectable Antibiotics</h3>
+                </div>
+                <!-- Category Item 2 -->
+                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-200">
+                    <div class="img-wrap w-full h-48 sm:h-56">
+                        <img src="images/categories/image2.webp" alt="Antifungal Creams"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Antifungal Creams</h3>
+                </div>
+                <!-- Category Item 3 -->
+                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-300">
+                    <div class="img-wrap w-full h-48 sm:h-56">
+                        <img src="images/categories/image3.webp" alt="Syrups" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Pharmaceutical Syrups</h3>
+                </div>
+                <!-- Category Item 4 -->
+                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-400">
+                    <div class="img-wrap w-full h-48 sm:h-56">
+                        <img src="images/categories/image4.webp" alt="Tonics" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Tonics</h3>
+                </div>
+                <!-- Category Item 5 -->
+                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-400">
+                    <div class="img-wrap w-full h-48 sm:h-56">
+                        <img src="images/categories/image5.webp" alt="Eye & Ear Drops"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Eye & Ear Drops</h3>
+                </div>
+                <!-- Category Item 6 -->
+                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-500">
+                    <div class="img-wrap w-full h-48 sm:h-56">
+                        <img src="images/categories/image1.webp" alt="Surgical Goods & Devices"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Surgical Goods & Devices</h3>
+                </div>
+                <!-- Category Item 7 -->
+                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-500">
+                    <div class="img-wrap w-full h-48 sm:h-56">
+                        <img src="images/categories/image2.webp" alt="Vaccines & Serums"
+                            class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Vaccines & Serums</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Products Section -->
+    <section id="products" class="py-16 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fadeInUp-on-scroll">
+                <h2 class="text-sm font-semibold text-primary tracking-wide uppercase">Best Sellers</h2>
+                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+                    Featured Products
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Product 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-100">
+                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
+                        <img src="images/products/image1.avif" alt="Product Item"
+                            class="w-full h-full object-cover mix-blend-multiply">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Amoxicillin Injection 500mg</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-1">High quality antibiotic for bacterial infections.
+                        </p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-bold text-gray-900">₹120.00</span>
+                            <div class="flex space-x-2">
+                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
+                                        class="fas fa-shopping-cart"></i></button>
+                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-200">
+                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
+                        <img src="images/products/image2.avif" alt="Product Item"
+                            class="w-full h-full object-cover mix-blend-multiply">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Clotrimazole Cream 1%</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-1">Effective antifungal dermal cream.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-bold text-gray-900">₹85.00</span>
+                            <div class="flex space-x-2">
+                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
+                                        class="fas fa-shopping-cart"></i></button>
+                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-300">
+                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
+                        <img src="images/products/image3.avif" alt="Product Item"
+                            class="w-full h-full object-cover mix-blend-multiply">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Cough Syrup Dry & Wet</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-1">Fast relief from persistent cough.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-bold text-gray-900">₹110.00</span>
+                            <div class="flex space-x-2">
+                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
+                                        class="fas fa-shopping-cart"></i></button>
+                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div
+                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-100">
+                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
+                        <img src="images/products/image4.avif" alt="Product Item"
+                            class="w-full h-full object-cover mix-blend-multiply">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Health Tonic 200ml</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-1">Multivitamin enriched health tonic.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-bold text-gray-900">₹145.00</span>
+                            <div class="flex space-x-2">
+                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
+                                        class="fas fa-shopping-cart"></i></button>
+                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div
+                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-200">
+                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
+                        <img src="images/products/image5.avif" alt="Product Item"
+                            class="w-full h-full object-cover mix-blend-multiply">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Eye Drops Tears</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-1">Soothing relief for dry and itchy eyes.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-bold text-gray-900">₹70.00</span>
+                            <div class="flex space-x-2">
+                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
+                                        class="fas fa-shopping-cart"></i></button>
+                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div
+                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-300">
+                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
+                        <img src="images/products/image6.avif" alt="Product Item"
+                            class="w-full h-full object-cover mix-blend-multiply">
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Ear Drops Antibiotic</h3>
+                        <p class="text-sm text-gray-500 mb-4 flex-1">For treating external ear infections.</p>
+                        <div class="flex items-center justify-between mt-auto">
+                            <span class="text-xl font-bold text-gray-900">₹65.00</span>
+                            <div class="flex space-x-2">
+                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
+                                        class="fas fa-shopping-cart"></i></button>
+                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <a href="#contact" class="btn-secondary px-8 py-3 rounded-full text-lg font-semibold shadow-sm">View All
+                    Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 lg:py-28 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <div class="fadeInUp-on-scroll">
+                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl mb-6">ABOUT US</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        We are a leading company to manufacture and supply a wide range of pharmaceuticals to
+                        semi-regulated and non-regulated markets across the globe. We are located Delhi, and have been functioning in the industry since long.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        Our commitment to provide world class quality, competitive pricing & constant urge to explore
+                        new therapeutic segments and expand our product portfolio have gained us a reputation as a
+                        global manufacturer of world class quality medicines and pharmaceutical products.
+                    </p>
+                    <div class="mb-10 lg:mb-0">
+                        <a href="#contact" class="btn-primary px-8 py-3 rounded-md font-medium text-sm">Contact Us
+                            Today</a>
+                    </div>
+                </div>
+                <div class="relative mt-12 lg:mt-0 fadeInUp-on-scroll delay-200">
+                    <div class="img-wrap rounded-2xl shadow-xl">
+                        <img src="images/about section image.webp" alt="About Pharmacy"
+                            class="w-full h-auto object-cover rounded-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fadeInUp-on-scroll">
+                <h2 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">GALLERY</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="img-wrap shadow-md rounded-xl h-64 fadeInUp-on-scroll delay-100">
+                    <img src="images/gallery/image1.jpg" alt="Gallery Image 1" class="w-full h-full object-cover">
+                </div>
+                <div class="img-wrap shadow-md rounded-xl h-64 fadeInUp-on-scroll delay-200">
+                    <img src="images/gallery/image2.webp" alt="Gallery Image 2" class="w-full h-full object-cover">
+                </div>
+                <div class="img-wrap shadow-md rounded-xl h-64 fadeInUp-on-scroll delay-300">
+                    <img src="images/gallery/image3.webp" alt="Gallery Image 3" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-cover bg-center relative" style="background-image: url('images/Hero section image.jpg');">
+        <div class="absolute inset-0 bg-dark bg-opacity-80 mix-blend-multiply"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fadeInUp-on-scroll">
+                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">TESTIMONIALS</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div
+                    class="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-2xl border border-white border-opacity-20 text-center hover-scale fadeInUp-on-scroll delay-100">
+                    <img src="images/person1.webp" alt="Pankaj Sharma"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-primary object-cover">
+                    <p class="text-white italic mb-4">"They provide very good quality of pharmaceutical products at very
+                        affordable rates."</p>
+                    <h4 class="text-primary font-bold text-lg">Pankaj Sharma</h4>
+                </div>
+                <!-- Testimonial 2 -->
+                <div
+                    class="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-2xl border border-white border-opacity-20 text-center hover-scale fadeInUp-on-scroll delay-200">
+                    <img src="images/person2.jpg" alt="Rahul Singh"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-primary object-cover">
+                    <p class="text-white italic mb-4">"Very good range of products and they keep in mind their
+                        responsibility towards society as well."</p>
+                    <h4 class="text-primary font-bold text-lg">Rahul Singh</h4>
+                </div>
+                <!-- Testimonial 3 -->
+                <div
+                    class="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-2xl border border-white border-opacity-20 text-center hover-scale fadeInUp-on-scroll delay-300">
+                    <img src="images/person3.jpg" alt="Seema Khan"
+                        class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-primary object-cover">
+                    <p class="text-white italic mb-4">"I am extremely impressed with their range of pharmaceutical
+                        products."</p>
+                    <h4 class="text-primary font-bold text-lg">Seema Khan</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    <section class="py-16 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fadeInUp-on-scroll">
+                <h2 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">VIDEOS</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-100 rounded-2xl p-2 shadow-sm fadeInUp-on-scroll delay-100">
+                    <iframe class="w-full h-64 sm:h-80 rounded-xl" src="https://www.youtube.com/embed/MqJ3zt_-Pao"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h3 class="text-center mt-4 mb-2 font-semibold text-lg">What to Pack in Your Travel First Aid Kit
+                    </h3>
+                </div>
+                <div class="bg-gray-100 rounded-2xl p-2 shadow-sm fadeInUp-on-scroll delay-200">
+                    <iframe class="w-full h-64 sm:h-80 rounded-xl" src="https://www.youtube.com/embed/8assGpZvwG4"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                    <h3 class="text-center mt-4 mb-2 font-semibold text-lg">First Aid Kit Essentials</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 relative border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fadeInUp-on-scroll">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl uppercase">Contact Us</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Info -->
+                <div class="space-y-8 fadeInUp-on-scroll delay-100">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10 text-primary">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Our Office Address</h3>
+                            <p class="text-gray-600 text-base">New Delhi, 110001, Delhi, India</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10 text-primary">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">General Enquiries</h3>
+                            <p class="text-gray-600 text-base"><a href="mailto:info@laytelifescience.com"
+                                    class="hover:text-primary transition-colors">info@laytelifescience.com</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10 text-primary">
+                                <i class="fas fa-phone-alt text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Call Us</h3>
+                            <p class="text-gray-600 text-base"><a href="tel:+917439434212"
+                                    class="hover:text-primary transition-colors">+91-7439434212</a></p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10 text-primary">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                        </div>
+                        <div class="ml-6">
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Our Timing</h3>
+                            <p class="text-gray-600 text-base">Mon - Sun : 10:00 AM - 07:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div
+                    class="bg-white shadow-lg rounded-2xl p-8 lg:p-12 border border-gray-100 fadeInUp-on-scroll delay-200">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name <span
+                                    class="text-red-500">*</span></label>
+                            <input type="text" name="name" id="name" required
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:ring-primary focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number <span
+                                    class="text-red-500">*</span></label>
+                            <input type="tel" name="mobile" id="mobile" required
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:ring-primary focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" name="email" id="email"
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:ring-primary focus:border-primary">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:ring-primary focus:border-primary"></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full flex justify-center py-3 px-4 border border-transparent shadow-sm text-lg font-medium rounded-md text-white bg-primary hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="mt-16 map-container shadow-md rounded-2xl fadeInUp-on-scroll delay-300">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83923192868!2d77.06889754725783!3d28.5272803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1689100000000!5m2!1sen!2sin"
+                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="mb-8 md:mb-0">
+                <img class="h-16 w-auto object-contain bg-white p-1 rounded-md mb-4" src="images/logo.jpeg"
+                    alt="Layte LifeScience Logo">
+                <p class="text-gray-400 text-sm">Providing world class quality medicines and pharmaceutical products.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-white">Quick Links</h4>
+                <ul class="space-y-2 text-gray-400">
+                    <li><a href="#home" class="hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-primary transition-colors">About Us</a></li>
+                    <li><a href="#categories" class="hover:text-primary transition-colors">Products</a></li>
+                    <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-bold mb-4 text-white">Follow Us</h4>
+                <div class="flex space-x-4">
+                    <a href="#"
+                        class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"
+                        class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="#"
+                        class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="#"
+                        class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
+            <p>&copy; Copyrights 2026 - 2027. Layte LifeScience Private
+                Limited. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
