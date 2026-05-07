@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Contact Us | Layte LifeScience Private Limited</title>
+    <link href="images/logo1.png" rel="icon" type="image/jpeg" />
+    <meta
+        content="Get in touch with Layte LifeScience for product enquiries, bulk orders, or distribution partnerships. Reach out to us via email, phone or WhatsApp."
+        name="description" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    </link>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration for Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B5E9B',
+                        'primary-hover': '#154e82',
+                        secondary: '#E8402A',
+                        dark: '#0D2E4A',
+                        light: '#F5F5F0'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 glass-panel navbar">
+        <div class="nav-inner">
+            <a class="nav-logo" href="index.html">
+                <img alt="Layte LifeScience Logo" src="images/logo1.png" />
+            </a>
+            <div class="nav-links hidden md:flex">
+                <a class="nav-link" href="index.html">Home</a>
+                <div class="nav-item">
+                    <a class="nav-link" href="about.html">About Us <i
+                            class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
+                    <div class="dropdown">
+                        <a href="about.html">Company Overview</a>
+                        <a href="about.html#story">Our Story</a>
+                        <a href="leadership.html">Leadership Team</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link" href="products.html">Products <i
+                            class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
+                    <div class="mega-menu">
+                        <a class="mega-item" href="products.html"><i class="fa-solid fa-syringe icon text-primary"></i>
+                            Injectable Antibiotics</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-hand-dots icon text-primary"></i> Antifungals</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-prescription-bottle-medical icon text-primary"></i> Syrups &amp;
+                            Tonics</a>
+                        <a class="mega-item" href="products.html"><i class="fa-solid fa-eye icon text-primary"></i> Eye
+                            &amp; Ear Drops</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-kit-medical icon text-primary"></i> Surgical Goods</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-shield-virus icon text-primary"></i> Vaccines</a>
+                        <a class="mega-item" href="products.html"><i class="fa-solid fa-vial icon text-primary"></i>
+                            Diagnostics</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-layer-group icon text-primary"></i> All Products</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="quality.html">Quality</a>
+                <a class="nav-link" href="capabilities.html">Capabilities</a>
+                <a class="nav-link active" href="contact.html">Contact Us</a>
+            </div>
+            <div class="nav-cta hidden md:flex">
+                <a class="btn btn-cta" href="contact.html">Enquire Now</a>
+            </div>
+            <button class="nav-hamburger md:hidden" id="mobile-menu-button" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="nav-mobile" id="mobile-menu">
+            <button class="nav-mobile-close" id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
+            <a class="nav-mobile-link" href="index.html">Home</a>
+            <div class="nav-item">
+                <a class="nav-mobile-link" href="about.html">About Us</a>
+                <div class="nav-mobile-sub">
+                    <a href="about.html">Company Overview</a>
+                    <a href="about.html#story">Our Story</a>
+                    <a href="leadership.html">Leadership Team</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a class="nav-mobile-link" href="products.html">Products</a>
+                <div class="nav-mobile-sub">
+                    <a href="products.html">Injectable Antibiotics</a>
+                    <a href="products.html">Antifungals</a>
+                    <a href="products.html">Syrups &amp; Tonics</a>
+                    <a href="products.html">Eye &amp; Ear Drops</a>
+                    <a href="products.html">Surgical Goods</a>
+                    <a href="products.html">Vaccines</a>
+                    <a href="products.html">Diagnostics</a>
+                    <a href="products.html">All Products</a>
+                </div>
+            </div>
+            <a class="nav-mobile-link" href="quality.html">Quality</a>
+            <a class="nav-mobile-link" href="capabilities.html">Capabilities</a>
+            <a class="nav-mobile-link text-primary" href="contact.html">Contact Us</a>
+            <a class="btn btn-cta mt-6 text-center w-full" href="contact.html">Enquire Now</a>
+        </div>
+    </nav>
+    <!-- Hero (minimal) -->
+    <header class="hero-inner ll-page-hero ll-contact-hero">
+        <div class="hero-inner-content">
+            <h1>Get In Touch</h1>
+            <p>Whether you are a hospital, pharmacy, or distributor — our team responds within 24 hours.</p>
+        </div>
+    </header>
+    <!-- Contact cards -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="ll-contact-cards">
+                <article class="ll-contact-card fade-up">
+                    <div aria-hidden="true" class="ll-contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <h3>Office Address</h3>
+                    <p>S-134/267, Harijan Camp, Lodhi Road,<br />Near MC Market, New Delhi – 110003, Delhi, India</p>
+                </article>
+                <article class="ll-contact-card fade-up">
+                    <div aria-hidden="true" class="ll-contact-icon"><i class="fa-solid fa-phone"></i></div>
+                    <h3>Phone &amp; WhatsApp</h3>
+                    <p><a href="tel:+916003214247">+91 6003214247</a></p>
+                    <a class="btn ll-btn-whatsapp" href="https://wa.me/916003214247" rel="noopener noreferrer"
+                        target="_blank">
+                        WhatsApp Us <span aria-hidden="true">→</span>
+                    </a>
+                </article>
+                <article class="ll-contact-card fade-up">
+                    <div aria-hidden="true" class="ll-contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <h3>Email &amp; Hours</h3>
+                    <p><a href="mailto:laytelifescience@gmail.com">laytelifescience@gmail.com</a><br />
+                        Business Hours: Mon–Sun, 10:00 AM – 7:00 PM</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Enquiry form + map -->
+    <section class="section section--white">
+        <div class="container">
+            <div class="ll-contact-layout">
+                <div class="ll-contact-form-wrap fade-up">
+                    <h2 class="mb-24">Send Us an Enquiry</h2>
+                    <form id="contact-form" novalidate="">
+                        <div class="ll-form-group">
+                            <label for="name">Full Name <span class="text-red">*</span></label>
+                            <input id="name" name="name" placeholder="Enter your full name" type="text" />
+                        </div>
+                        <div class="ll-form-group">
+                            <label for="company">Company / Hospital Name <span class="text-red">*</span></label>
+                            <input id="company" name="company" placeholder="Enter your organization name" type="text" />
+                        </div>
+                        <div class="ll-form-group">
+                            <label for="mobile">Mobile Number <span class="text-red">*</span></label>
+                            <input id="mobile" name="mobile" placeholder="e.g. 98765 43210" type="tel" />
+                        </div>
+                        <div class="ll-form-group">
+                            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+                            <input id="email" name="email" placeholder="you@example.com (optional)" type="email" />
+                        </div>
+                        <div class="ll-form-group">
+                            <label for="enquiry-type">Enquiry Type <span class="text-red">*</span></label>
+                            <select id="enquiry-type" name="enquiry-type">
+                                <option value="">Select an option</option>
+                                <option value="Product Enquiry">Product Enquiry</option>
+                                <option value="Bulk Order">Bulk Order</option>
+                                <option value="Distribution Partnership">Distribution Partnership</option>
+                                <option value="General">General</option>
+                            </select>
+                        </div>
+                        <div class="ll-form-group">
+                            <label for="message">Message <span class="text-red">*</span></label>
+                            <textarea id="message" name="message" placeholder="Share your requirements or questions..."
+                                rows="4"></textarea>
+                        </div>
+                        <button class="btn btn-cta w-full" type="submit">Send Enquiry</button>
+                        <p class="ll-form-note">We typically respond within 4–8 business hours. For urgent requirements,
+                            WhatsApp us directly.</p>
+                    </form>
+                </div>
+                <div class="ll-contact-map fade-up">
+                    <iframe allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4286905503754!2d77.22395757541001!3d28.586913586150967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce31bb23a475f%3A0xfc6b092458539d4!2sHarijan%20Camp%20Lodhi%20Colony%20Near%20Police%20Station%20Staff%20Quater!5e0!3m2!1sen!2sin!4v1775904190401!5m2!1sen!2sin"
+                        style="border:0;" title="Layte LifeScience Location Map"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-main">
+            <!-- Brand Column -->
+            <div class="mb-8 md:mb-0">
+                <div class="footer-logo">
+                    <img src="images/logo1.png" alt="Layte LifeScience Logo">
+                </div>
+                <p class="text-white font-bold mb-2" style="font-size: 15px;">Quality Medicines, Delivered with Integrity.</p>
+                <p class="mb-6" style="color: rgba(255,255,255,0.6);">Trusted pharmaceutical supplier to hospitals, pharmacies, and distributors across India.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4>Quick Links</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="quality.html">Quality</a>
+                    <a href="capabilities.html">Capabilities</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <!-- Product Categories -->
+            <div>
+                <h4>Product Categories</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="products.html">Injectable Antibiotics</a>
+                    <a href="products.html">Antifungals</a>
+                    <a href="products.html">Syrups</a>
+                    <a href="products.html">Vaccines</a>
+                    <a href="products.html">Surgical Goods</a>
+                    <a href="products.html">Diagnostics</a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4>Contact Info</h4>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>S-134/267, Harijan Camp, Lodhi Road, New Delhi – 110003</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+91 6003214247</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+91 6003214247</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fas fa-envelope"></i>
+                    <span>laytelifescience@gmail.com</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon–Sun, 10:00 AM – 7:00 PM</span>
+                </div>
+                <div class="footer-cert-strip">
+                    <span class="footer-cert">WHO-GMP</span>
+                    <span class="footer-cert">DCGI</span>
+                    <span class="footer-cert">ISO 9001:2015</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2026 Layte LifeScience Private Limited. All Rights Reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" style="margin-bottom: 0; color: inherit;">Privacy Policy</a>
+                    <span class="opacity-50">|</span>
+                    <span class="font-semibold tracking-wide">Made in India</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <div class="ll-fab-container">
+        <!-- WhatsApp FAB -->
+        <div class="fab-wa-wrapper" style="position: relative;">
+            <div class="fab-pulse"></div>
+            <a href="https://wa.me/916003214247" target="_blank" rel="noopener noreferrer" class="ll-fab ll-fab-wa" aria-label="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <!-- Phone FAB -->
+        <div class="fab-tel-wrapper">
+            <a href="tel:+916003214247" class="ll-fab ll-fab-tel" aria-label="Call Layte LifeScience">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        </div>
+    </div>
+    
+</body>
+
+</html>
