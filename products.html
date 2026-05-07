@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Product Portfolio | Layte LifeScience Private Limited</title>
+    <link href="images/logo1.png" rel="icon" type="image/jpeg" />
+    <meta
+        content="Explore our extensive portfolio of over 500 pharmaceutical products including injectables, syrups, surgical goods, and vaccines."
+        name="description" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    </link>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom Tailwind Configuration for Colors -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1B5E9B',
+                        'primary-hover': '#154e82',
+                        secondary: '#E8402A',
+                        dark: '#0D2E4A',
+                        light: '#F5F5F0'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50 glass-panel navbar">
+        <div class="nav-inner">
+            <a class="nav-logo" href="index.html">
+                <img alt="Layte LifeScience Logo" src="images/logo1.png" />
+            </a>
+            <div class="nav-links hidden md:flex">
+                <a class="nav-link" href="index.html">Home</a>
+                <div class="nav-item">
+                    <a class="nav-link" href="about.html">About Us <i
+                            class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
+                    <div class="dropdown">
+                        <a href="about.html">Company Overview</a>
+                        <a href="about.html#story">Our Story</a>
+                        <a href="leadership.html">Leadership Team</a>
+                    </div>
+                </div>
+                <div class="nav-item">
+                    <a class="nav-link active" href="products.html">Products <i
+                            class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
+                    <div class="mega-menu">
+                        <a class="mega-item" href="products.html"><i class="fa-solid fa-syringe icon text-primary"></i>
+                            Injectable Antibiotics</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-hand-dots icon text-primary"></i> Antifungals</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-prescription-bottle-medical icon text-primary"></i> Syrups &amp;
+                            Tonics</a>
+                        <a class="mega-item" href="products.html"><i class="fa-solid fa-eye icon text-primary"></i> Eye
+                            &amp; Ear Drops</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-kit-medical icon text-primary"></i> Surgical Goods</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-shield-virus icon text-primary"></i> Vaccines</a>
+                        <a class="mega-item" href="products.html"><i class="fa-solid fa-vial icon text-primary"></i>
+                            Diagnostics</a>
+                        <a class="mega-item" href="products.html"><i
+                                class="fa-solid fa-layer-group icon text-primary"></i> All Products</a>
+                    </div>
+                </div>
+                <a class="nav-link" href="quality.html">Quality</a>
+                <a class="nav-link" href="capabilities.html">Capabilities</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </div>
+            <div class="nav-cta hidden md:flex">
+                <a class="btn btn-cta" href="contact.html">Enquire Now</a>
+            </div>
+            <button class="nav-hamburger md:hidden" id="mobile-menu-button" type="button">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="nav-mobile" id="mobile-menu">
+            <button class="nav-mobile-close" id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
+            <a class="nav-mobile-link" href="index.html">Home</a>
+            <div class="nav-item">
+                <a class="nav-mobile-link" href="about.html">About Us</a>
+                <div class="nav-mobile-sub">
+                    <a href="about.html">Company Overview</a>
+                    <a href="about.html#story">Our Story</a>
+                    <a href="leadership.html">Leadership Team</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a class="nav-mobile-link text-primary" href="products.html">Products</a>
+                <div class="nav-mobile-sub">
+                    <a href="products.html">Injectable Antibiotics</a>
+                    <a href="products.html">Antifungals</a>
+                    <a href="products.html">Syrups &amp; Tonics</a>
+                    <a href="products.html">Eye &amp; Ear Drops</a>
+                    <a href="products.html">Surgical Goods</a>
+                    <a href="products.html">Vaccines</a>
+                    <a href="products.html">Diagnostics</a>
+                    <a href="products.html">All Products</a>
+                </div>
+            </div>
+            <a class="nav-mobile-link" href="quality.html">Quality</a>
+            <a class="nav-mobile-link" href="capabilities.html">Capabilities</a>
+            <a class="nav-mobile-link" href="contact.html">Contact Us</a>
+            <a class="btn btn-cta mt-6 text-center w-full" href="contact.html">Enquire Now</a>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <header class="hero-inner ll-page-hero">
+        <div aria-hidden="true" class="hero-inner-bg">
+            <img alt="" src="images/Hero section image.jpg" />
+        </div>
+        <div class="hero-inner-content">
+            <h1>Our Product Portfolio</h1>
+            <p>500+ pharmaceutical products across 8 categories, sourced from certified manufacturers with full
+                regulatory compliance.</p>
+        </div>
+    </header>
+    <!-- Filter bar -->
+    <section class="section section--white ll-products">
+        <div class="container">
+            <div class="ll-filter-wrap fade-up">
+                <div aria-label="Product category filter" class="ll-filter-tabs" role="tablist">
+                    <button aria-selected="true" class="ll-tab active" data-filter="all" role="tab"
+                        type="button">All</button>
+                    <button aria-selected="false" class="ll-tab" data-filter="Injectable Antibiotics" role="tab"
+                        type="button">Injectable Antibiotics</button>
+                    <button aria-selected="false" class="ll-tab" data-filter="Antifungals" role="tab"
+                        type="button">Antifungals</button>
+                    <button aria-selected="false" class="ll-tab" data-filter="Syrups" role="tab"
+                        type="button">Syrups</button>
+                    <button aria-selected="false" class="ll-tab" data-filter="Tonics" role="tab"
+                        type="button">Tonics</button>
+                    <button aria-selected="false" class="ll-tab" data-filter="Eye &amp; Ear Drops" role="tab"
+                        type="button">Eye &amp; Ear Drops</button>
+                    <button aria-selected="false" class="ll-tab" data-filter="Surgical" role="tab"
+                        type="button">Surgical</button>
+                    <button aria-selected="false" class="ll-tab" data-filter="Vaccines" role="tab"
+                        type="button">Vaccines</button>
+                    <button aria-selected="false" class="ll-tab" data-filter="Diagnostics" role="tab"
+                        type="button">Diagnostics</button>
+                </div>
+            </div>
+            <!-- Product grid -->
+            <div aria-live="polite" class="ll-product-grid">
+                <article class="ll-product-card fade-up" data-category="Injectable Antibiotics">
+                    <div class="ll-prod-img">
+                        <img alt="Amoxicillin Injection 500mg" src="images/products/image1.avif" />
+                    </div>
+                    <div class="ll-prod-body">
+                        <div class="ll-prod-top">
+                            <div class="ll-prod-name">Amoxicillin Injection 500mg</div>
+                            <span class="ll-badge">Injectable Antibiotics</span>
+                        </div>
+                        <p class="ll-prod-desc">Broad-spectrum antibiotic injection for institutional and hospital use.
+                        </p>
+                        <div class="ll-comp">Composition: Amoxicillin 500mg</div>
+                        <a class="btn btn-cta ll-enquire" href="index.html#contact">Enquire for Price</a>
+                    </div>
+                </article>
+                <article class="ll-product-card fade-up" data-category="Antifungals">
+                    <div class="ll-prod-img">
+                        <img alt="Clotrimazole Cream 1%" src="images/products/image2.avif" />
+                    </div>
+                    <div class="ll-prod-body">
+                        <div class="ll-prod-top">
+                            <div class="ll-prod-name">Clotrimazole Cream 1%</div>
+                            <span class="ll-badge">Antifungals</span>
+                        </div>
+                        <p class="ll-prod-desc">Topical antifungal cream for effective dermatological treatment.</p>
+                        <div class="ll-comp">Composition: Clotrimazole 1% w/w</div>
+                        <a class="btn btn-cta ll-enquire" href="index.html#contact">Enquire for Price</a>
+                    </div>
+                </article>
+                <article class="ll-product-card fade-up" data-category="Syrups">
+                    <div class="ll-prod-img">
+                        <img alt="Cough Syrup Dry &amp; Wet" src="images/products/image3.avif" />
+                    </div>
+                    <div class="ll-prod-body">
+                        <div class="ll-prod-top">
+                            <div class="ll-prod-name">Cough Syrup Dry &amp; Wet</div>
+                            <span class="ll-badge">Syrups</span>
+                        </div>
+                        <p class="ll-prod-desc">Dual-action cough formulation suitable for dry and productive cough.</p>
+                        <div class="ll-comp">Composition: As per label claim</div>
+                        <a class="btn btn-cta ll-enquire" href="index.html#contact">Enquire for Price</a>
+                    </div>
+                </article>
+                <article class="ll-product-card fade-up" data-category="Tonics">
+                    <div class="ll-prod-img">
+                        <img alt="Health Tonic 200ml" src="images/products/image4.avif" />
+                    </div>
+                    <div class="ll-prod-body">
+                        <div class="ll-prod-top">
+                            <div class="ll-prod-name">Health Tonic 200ml</div>
+                            <span class="ll-badge">Tonics</span>
+                        </div>
+                        <p class="ll-prod-desc">Multivitamin tonic for daily wellness and nutritional support.</p>
+                        <div class="ll-comp">Composition: Vitamins &amp; minerals blend</div>
+                        <a class="btn btn-cta ll-enquire" href="index.html#contact">Enquire for Price</a>
+                    </div>
+                </article>
+                <article class="ll-product-card fade-up" data-category="Eye &amp; Ear Drops">
+                    <div class="ll-prod-img">
+                        <img alt="Lubricant Eye Drops" src="images/products/image5.avif" />
+                    </div>
+                    <div class="ll-prod-body">
+                        <div class="ll-prod-top">
+                            <div class="ll-prod-name">Lubricant Eye Drops</div>
+                            <span class="ll-badge">Eye &amp; Ear Drops</span>
+                        </div>
+                        <p class="ll-prod-desc">Soothing formulation for dry-eye relief and long-lasting comfort.</p>
+                        <div class="ll-comp">Composition: Carboxymethylcellulose (typ.)</div>
+                        <a class="btn btn-cta ll-enquire" href="index.html#contact">Enquire for Price</a>
+                    </div>
+                </article>
+                <article class="ll-product-card fade-up" data-category="Eye &amp; Ear Drops">
+                    <div class="ll-prod-img">
+                        <img alt="Antibiotic Ear Drops" src="images/products/image6.avif" />
+                    </div>
+                    <div class="ll-prod-body">
+                        <div class="ll-prod-top">
+                            <div class="ll-prod-name">Antibiotic Ear Drops</div>
+                            <span class="ll-badge">Eye &amp; Ear Drops</span>
+                        </div>
+                        <p class="ll-prod-desc">Antibiotic drops for external ear infections and inflammation.</p>
+                        <div class="ll-comp">Composition: As per label claim</div>
+                        <a class="btn btn-cta ll-enquire" href="index.html#contact">Enquire for Price</a>
+                    </div>
+                </article>
+                <article class="ll-product-card fade-up" data-category="Surgical">
+                    <div aria-hidden="true" class="ll-prod-img ll-prod-ph">
+                        <div class="ll-ph-inner"><i class="fa-solid fa-hand"></i></div>
+                    </div>
+                    <div class="ll-prod-body">
+                        <div class="ll-prod-top">
+                            <div class="ll-prod-name">Surgical Gloves</div>
+                            <span class="ll-badge">Surgical</span>
+                        </div>
+                        <p class="ll-prod-desc">Powder-free gloves for surgical and examination-grade hygiene.</p>
+                        <div class="ll-comp">Composition: Latex / nitrile options</div>
+                        <a class="btn btn-cta ll-enquire" href="index.html#contact">Enquire for Price</a>
+                    </div>
+                </article>
+                <article class="ll-product-card fade-up" data-category="Vaccines">
+                    <div aria-hidden="true" class="ll-prod-img ll-prod-ph">
+                        <div class="ll-ph-inner"><i class="fa-solid fa-shield-virus"></i></div>
+                    </div>
+                    <div class="ll-prod-body">
+                        <div class="ll-prod-top">
+                            <div class="ll-prod-name">Hepatitis B Vaccine</div>
+                            <span class="ll-badge">Vaccines</span>
+                        </div>
+                        <p class="ll-prod-desc">Verified cold-chain handling and documentation for institutional supply.
+                        </p>
+                        <div class="ll-comp">Composition: Recombinant HBsAg (typ.)</div>
+                        <a class="btn btn-cta ll-enquire" href="index.html#contact">Enquire for Price</a>
+                    </div>
+                </article>
+                <article class="ll-product-card fade-up" data-category="Diagnostics">
+                    <div aria-hidden="true" class="ll-prod-img ll-prod-ph">
+                        <div class="ll-ph-inner"><i class="fa-solid fa-vial"></i></div>
+                    </div>
+                    <div class="ll-prod-body">
+                        <div class="ll-prod-top">
+                            <div class="ll-prod-name">Blood Glucose Test Strips</div>
+                            <span class="ll-badge">Diagnostics</span>
+                        </div>
+                        <p class="ll-prod-desc">Accurate, consistent strips for routine glucose monitoring workflows.
+                        </p>
+                        <div class="ll-comp">Composition: Enzyme-based test strip (typ.)</div>
+                        <a class="btn btn-cta ll-enquire" href="index.html#contact">Enquire for Price</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Quality assurance banner -->
+    <section aria-label="Quality assurance" class="ll-quality-strip">
+        <div class="container ll-quality-inner">
+            <div class="ll-quality-left">
+                <div aria-hidden="true" class="ll-quality-icon">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                </div>
+                <p class="ll-quality-text">All products are sourced from DCGI-approved, WHO-GMP certified manufacturers.
+                    Certificate of Analysis provided with every batch.</p>
+            </div>
+            <div class="ll-quality-right">
+                <a class="btn btn-outline-blue" href="index.html#contact">See Compliance <span
+                        aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+    <!-- Bulk enquiry CTA -->
+    <section aria-label="Bulk enquiry" class="section section--navy ll-bulk">
+        <div class="container ll-bulk-inner">
+            <div class="fade-up">
+                <h3 class="ll-bulk-title">Looking for Bulk Orders or Custom Requirements?</h3>
+                <p class="ll-bulk-sub">We cater to hospitals, government tenders, pharmacy chains, and institutional
+                    buyers. Contact us for custom pricing.</p>
+            </div>
+            <div class="fade-up">
+                <a class="btn btn-outline" href="index.html#contact">Submit Bulk Enquiry <span
+                        aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-main">
+            <!-- Brand Column -->
+            <div class="mb-8 md:mb-0">
+                <div class="footer-logo">
+                    <img src="images/logo1.png" alt="Layte LifeScience Logo">
+                </div>
+                <p class="text-white font-bold mb-2" style="font-size: 15px;">Quality Medicines, Delivered with Integrity.</p>
+                <p class="mb-6" style="color: rgba(255,255,255,0.6);">Trusted pharmaceutical supplier to hospitals, pharmacies, and distributors across India.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4>Quick Links</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="quality.html">Quality</a>
+                    <a href="capabilities.html">Capabilities</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+
+            <!-- Product Categories -->
+            <div>
+                <h4>Product Categories</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="products.html">Injectable Antibiotics</a>
+                    <a href="products.html">Antifungals</a>
+                    <a href="products.html">Syrups</a>
+                    <a href="products.html">Vaccines</a>
+                    <a href="products.html">Surgical Goods</a>
+                    <a href="products.html">Diagnostics</a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4>Contact Info</h4>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>S-134/267, Harijan Camp, Lodhi Road, New Delhi – 110003</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+91 6003214247</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+91 6003214247</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fas fa-envelope"></i>
+                    <span>laytelifescience@gmail.com</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon–Sun, 10:00 AM – 7:00 PM</span>
+                </div>
+                <div class="footer-cert-strip">
+                    <span class="footer-cert">WHO-GMP</span>
+                    <span class="footer-cert">DCGI</span>
+                    <span class="footer-cert">ISO 9001:2015</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2026 Layte LifeScience Private Limited. All Rights Reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" style="margin-bottom: 0; color: inherit;">Privacy Policy</a>
+                    <span class="opacity-50">|</span>
+                    <span class="font-semibold tracking-wide">Made in India</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <div class="ll-fab-container">
+        <!-- WhatsApp FAB -->
+        <div class="fab-wa-wrapper" style="position: relative;">
+            <div class="fab-pulse"></div>
+            <a href="https://wa.me/916003214247" target="_blank" rel="noopener noreferrer" class="ll-fab ll-fab-wa" aria-label="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <!-- Phone FAB -->
+        <div class="fab-tel-wrapper">
+            <a href="tel:+916003214247" class="ll-fab ll-fab-tel" aria-label="Call Layte LifeScience">
+                <i class="fas fa-phone-alt"></i>
+            </a>
+        </div>
+    </div>
+    
+</body>
+
+</html>

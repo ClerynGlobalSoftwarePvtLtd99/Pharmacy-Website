@@ -1,0 +1,1111 @@
+LAYTE LIFESCIENCE PVT. LTD.
+Pharmaceutical Products — New Delhi, India
+SOFTWARE REQUIREMENTS SPECIFICATION
+Website Redesign
+Project Blueprint
+Dr. Reddy's-Inspired Pharmaceutical Website
+with Full Page Architecture & Trust-Building Design
+VERSION
+1.0 — Final
+PREPARED FOR
+Layte LifeScience Pvt. Ltd.
+DATE
+07 May 2026
+REFERENCE SITE
+drreddys.com
+PROJECT URL
+laytelifesciencepvtltd.vercel.app
+STATUS
+Ready for Development
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 1 of 25
+
+Table of Contents
+1
+Project Overview & Objectives
+· 1.1 Project Background
+· 1.2 Business Goals
+· 1.3 Scope of Work
+· 1.4 Competitive Reference Analysis
+2
+Design System & Theme
+· 2.1 Color Palette
+· 2.2 Typography
+· 2.3 Visual Language & Spacing
+3
+Website Architecture — 7 Key Pages
+· Page 1 — Homepage
+· Page 2 — About Us
+· Page 3 — Products / Catalog
+· Page 4 — Quality & Compliance
+· Page 5 — Our Capabilities
+· Page 6 — Leadership / Team
+· Page 7 — Contact Us
+4
+Video Strategy — Where, What & Why
+· 4.1 Video Placement Map
+· 4.2 Video Type & Content Guidance
+5
+Trust-Building Elements
+· 5.1 Stats Counter Section
+· 5.2 Certifications & Compliance Badges
+· 5.3 Testimonials & Social Proof
+· 5.4 Partner Logos Strip
+6
+Navigation & Footer Architecture
+7
+Priority Changes — Action Checklist
+8
+Master Prompt for AI-Assisted Development
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 2 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION 1
+Project Overview & Objectives
+What we are building, why, and how it benchmarks against the industry leader.
+1.1 Project Background
+Layte LifeScience Pvt. Ltd. is a pharmaceutical products dealer and supplier based in New Delhi, India. The
+company supplies a wide range of products — including injectable antibiotics, antifungal creams, syrups, tonics,
+eye & ear drops, surgical goods, vaccines, and diagnostic products — to semi-regulated and non-regulated
+markets across India and internationally.
+The current website (laytelifesciencepvtltd.vercel.app) is a single-page scroll site that lacks the depth, credibility,
+and visual authority expected by institutional buyers, hospitals, pharmacy chains, and B2B partners in the
+pharmaceutical sector. The client requires a complete redesign that delivers the same trust, professionalism,
+and brand authority as Dr. Reddy's Laboratories (drreddys.com), one of India's most respected pharmaceutical
+companies.
+1.2 Business Goals
+Primary Goal
+Build a 7–10 page professional pharmaceutical website that instills
+confidence, credibility, and trust among institutional buyers, hospital
+procurement managers, pharmacy chains, and B2B partners.
+Design Reference
+Match the visual feel, design language, and trust architecture of drreddys.com
+— the gold standard for Indian pharma web presence.
+Brand Positioning
+Elevate Layte LifeScience from 'local pharma dealer' to 'quality-driven national
+pharmaceutical supplier' through design, content, and information
+architecture.
+Conversion Goal
+Drive enquiries, partnership requests, and product quote submissions through
+clear CTAs and B2B-focused content.
+SEO Foundation
+Multi-page architecture with proper meta, headings, and structured content for
+organic discovery.
+1.3 Scope of Work
+ Complete redesign of homepage with cinematic hero, stats counter, and trust elements
+ Creation of 7 primary pages (Homepage, About, Products, Quality, Capabilities, Leadership, Contact)
+ Implementation of Dr. Reddy's-inspired color scheme and design language
+ Mega-menu navigation architecture replacing flat anchor links
+ Video integration strategy (3 key placements)
+ Certifications & compliance section with badge display
+ Mobile-responsive layout across all pages
+ WhatsApp enquiry integration and multi-department contact form
+ Stats counter section with animated numbers on scroll
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 3 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+ Professional footer with sitemap, certifications, and social links
+1.4 Competitive Reference Analysis
+A detailed comparative analysis was performed between drreddys.com and the current Layte LifeScience
+website. The following table summarizes the critical gaps identified:
+Attribute
+Dr. Reddy's (Reference)
+Layte LifeScience (Current)
+Gap
+Structure
+Multi-page (10+ pages)
+Single scroll-page
+Critical
+Navigation
+Mega-menu with dropdowns
+Flat anchor links
+Critical
+Hero Section
+Full-screen video + tagline
+Static image + basic text
+Critical
+Trust Signals
+Stats, news, leadership, certs
+3 testimonials only
+Critical
+Color Scheme
+Deep blue #1B5E9B + navy
+Generic blue #3498db
+High
+Brand Tone
+Scientific, mission-driven
+Generic, dealer-focused
+High
+Quality Page
+Dedicated compliance page
+Not present
+Critical
+Leadership
+Team profiles + bios
+Not present
+High
+Typography
+Large-scale, bold hierarchy
+Standard, small scale
+High
+Video Content
+Brand + science videos
+YouTube embeds only
+Medium
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 4 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION 2
+Design System & Theme
+Color palette, typography, and visual language to replicate Dr. Reddy's authority and trust.
+2.1 Official Color Palette
+The following palette is extracted from Dr. Reddy's design language and adapted for Layte LifeScience. Every
+color must be implemented consistently across all 7 pages. No generic blues or default framework colors should
+be used — replace them all with this system.
+Role
+Hex Code
+Usage
+Swatc
+h
+Primary Blue
+#1B5E9B
+Navbar, headings, links, CTAs
+Authority Navy
+#0D2E4A
+Dark sections, hero overlay, footer bg
+CTA Red / Accent
+#E8402A
+Buttons, highlights, alerts, CTAs
+Background
+#F5F5F0
+Page background, section fills
+Body Text
+#1A1A1A
+All paragraph and body text
+Muted Gray
+#6B7280
+Secondary text, captions, labels
+Light Border
+#E5E7EB
+Dividers, card borders, table lines
+Pale Blue Fill
+#EBF3FB
+Card backgrounds, info blocks
+2.2 Typography System
+Element
+Font
+Size
+Weight
+Color
+Usage
+H1 — Page Title
+Inter / Plus Jakarta Sans
+56–72px desktop, 32px mobile
+700 Bold
+#0D2E4A
+Homepage hero, page titles
+H2 — Section Title
+Inter / Plus Jakarta Sans
+36–42px
+700 Bold
+#0D2E4A
+Section headings
+H3 — Card Title
+Inter / Plus Jakarta Sans
+22–26px
+600 Semi-bold
+#1B5E9B
+Cards, sub-sections
+H4 — Label
+Inter
+16–18px
+600
+#1B5E9B
+Category labels, tags
+Body Text
+Inter
+15–16px
+400 Regular
+#1A1A1A
+All paragraphs
+Muted / Caption
+Inter
+13–14px
+400
+#6B7280
+Dates, captions, notes
+CTA Button
+Inter
+15px
+600 Semi-bold
+#FFFFFF
+All buttons
+Navbar Links
+Inter
+14px
+500 Medium
+#1A1A1A
+Navigation items
+Stats Numbers
+Inter
+56–72px
+700 Bold
+#1B5E9B
+Counter section
+2.3 Visual Language & Spacing Rules
+ Section padding: 80–100px top and bottom on desktop, 48px on mobile
+ Card border-radius: 8px for small cards, 12px for large feature cards
+ Box shadows: subtle — box-shadow: 0 2px 12px rgba(27,94,155,0.08)
+ Image treatment: slightly desaturated images with blue color overlay on hover
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 5 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+ Button style: filled primary (#E8402A red or #1B5E9B blue), 6px radius, 44px height minimum
+ Hover effects: 0.3s ease transitions on all interactive elements
+ Grid system: 12-column grid, max-width 1280px, centered
+ Hero overlay: dark navy gradient (opacity 0.55) over background image/video
+ Section alternation: white sections alternate with #F5F5F0 off-white sections
+ All text on dark backgrounds must be white (#FFFFFF) or light blue (#B8D4EE)
+ Icons: use phosphor icons or heroicons — outline style, 24px standard size
+ No stock-looking imagery — use medical/lab/pharmaceutical professional imagery
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 6 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION 3
+Website Architecture — 7 Key Pages
+Complete content blueprints, headings, body text, CTAs, and section structure for each page.
+Page 1 — Homepage
+The homepage is the most critical page. It must immediately signal authority, quality, and scale. Every section is
+designed to answer the visitor's core question: 'Can I trust this company?'
+SECTION A — Hero (Full Screen)
+Background
+Cinematic video loop OR high-quality image of a pharmaceutical
+manufacturing facility / clean laboratory. Apply dark navy overlay (opacity
+0.55).
+Tagline (H1)
+"Quality Medicines, Delivered with Integrity."
+Sub-tagline
+"Trusted pharmaceutical supplier to hospitals, pharmacies, and distributors
+across India."
+CTA Buttons
+[ Explore Our Products ] [ Enquire Now → ] — red and ghost button side by
+side
+Trust Strip (below CTA)
+Small icons row: ✓ WHO-GMP Compliant | ✓ DCGI Registered | ✓ 10+ Years
+Experience | ✓ Pan-India Delivery
+SECTION B — Stats Counter
+Heading
+"Our Impact in Numbers"
+Counter 1
+"10+" — Years in Business
+Counter 2
+"500+" — Products in Portfolio
+Counter 3
+"20+" — States Served
+Counter 4
+"1000+" — Institutional Clients
+Note
+All counters animate with count-up on scroll-into-view. Navy background,
+white text.
+SECTION C — About Snapshot
+Heading
+"Who We Are"
+Paragraph
+"Layte LifeScience Pvt. Ltd. is a New Delhi-based pharmaceutical supplier
+with over a decade of experience providing world-class quality medicines to
+hospitals, clinics, pharmacies, and distributors across India. We are
+committed to affordability, quality, and timely delivery."
+CTA
+[ Read Our Full Story → ] linking to About Us page
+Image
+Professional image of team or facility on the right side
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 7 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION D — Product Categories
+Heading
+"Our Product Portfolio"
+Sub-heading
+"Comprehensive pharmaceutical solutions across 8 therapeutic categories"
+Category Cards (8)
+Injectable Antibiotics | Antifungal Creams | Pharmaceutical Syrups | Tonics &
+Supplements | Eye & Ear Drops | Surgical Goods & Devices | Vaccines &
+Serums | Diagnostic Products
+Card design
+Icon + category name + brief 1-line description + [ View Products ] link
+CTA Below
+[ View Full Product Catalog → ]
+SECTION E — Quality Commitment
+Heading
+"Beyond Compliance: Our Commitment to Quality"
+Paragraph
+"Every product we supply meets stringent quality standards set by CDSCO,
+WHO-GMP guidelines, and our own internal quality control protocols. We do
+not compromise — because your patients cannot afford us to."
+Three Pillars (cards)
+Regulatory Compliance | Cold Chain Integrity | Batch Testing & Verification
+CTA
+[ See Our Certifications → ] linking to Quality page
+SECTION F — Why Choose Us
+Heading
+"Why Hospitals & Pharmacies Choose Us"
+6 Feature Cards
+Genuine Products | Competitive Pricing | Pan-India Delivery | Dedicated
+Support | Regulatory Compliance | Wide Range
+Each card has
+Icon + Bold title + 2-line description
+SECTION G — Testimonials
+Heading
+"What Our Partners Say"
+Minimum
+4–6 testimonials with name, designation, and organization
+Format
+Card slider or 2-column grid, photo or initials avatar
+SECTION H — CTA Banner
+Background
+Deep blue (#1B5E9B) full-width banner
+Heading
+"Ready to Partner With Us?"
+Sub-text
+"Get in touch today for product enquiries, pricing, and distribution
+partnerships."
+Buttons
+[ Send Enquiry ] [ WhatsApp Us → ]
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 8 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Page 2 — About Us
+This page builds the personal and corporate story. It humanizes the brand, establishes legacy, and
+communicates the mission. Dr. Reddy's uses this page to establish vision, values, and purpose — not just
+company facts.
+SECTION A — Page Hero
+Background
+Professional image — medical team, facility, or abstract pharma visual with
+navy overlay
+H1 Title
+"About Layte LifeScience"
+Sub-title
+"A decade of trust. A commitment to quality. A partner you can count on."
+SECTION B — Our Mission
+Heading (H2)
+"Our Mission"
+Mission Statement
+"To ensure that quality medicines reach every hand — from metro hospitals to
+rural clinics — with integrity, reliability, and compassion."
+Heading (H2)
+"Our Vision"
+Vision Statement
+"To be the most trusted pharmaceutical supply partner in India, known for
+unwavering quality, transparent practices, and patient-first values."
+SECTION C — Our Story (Timeline optional)
+Heading (H2)
+"Our Journey"
+Paragraph 1
+"Layte LifeScience Pvt. Ltd. was founded in New Delhi with a single purpose:
+to bridge the gap between pharmaceutical manufacturers and the healthcare
+providers who need quality medicines most."
+Paragraph 2
+"Over the years, we have built strong relationships with leading manufacturers
+and have grown our portfolio to over 500 products across 8 therapeutic
+categories, serving clients across 20+ states in India."
+Paragraph 3
+"Our location in New Delhi — at the heart of India's healthcare hub — gives us
+strategic access to major distributors, hospitals, and government procurement
+channels."
+SECTION D — Our Values (4 Cards)
+Value 1
+Integrity & Transparency — We deal with honesty in every transaction, every
+product, every relationship.
+Value 2
+Quality First — We supply only products that meet or exceed regulatory
+standards. No shortcuts, no compromises.
+Value 3
+Patient Safety — Every medicine we distribute has a real patient at the end.
+That responsibility guides every decision.
+Value 4
+Reliable Partnership — We are not just a supplier. We are a long-term partner
+invested in your success.
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 9 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION E — Presence & Reach
+Heading (H2)
+"Our Reach"
+Content
+India map graphic showing states covered OR a simple stats grid: Pan-India
+Delivery | 20+ States | Delhi Headquarters | Government & Private Sector
+SECTION F — CTA
+Heading
+"Want to Know More?"
+Buttons
+[ Contact Our Team ] [ View Our Products ]
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 10 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Page 3 — Products / Catalog
+This is the primary commercial page. Visitors land here from Google searches and direct links. It must be
+organized, filterable, and inspire confidence in product quality.
+SECTION A — Page Hero
+H1
+"Our Product Portfolio"
+Sub-text
+"500+ pharmaceutical products across 8 categories, sourced from certified
+manufacturers and supplied with full regulatory compliance."
+SECTION B — Category Filter Bar
+Function
+Horizontal filter tabs: All | Injectable Antibiotics | Antifungals | Syrups | Tonics |
+Eye & Ear Drops | Surgical | Vaccines | Diagnostics
+Behavior
+Clicking a tab filters the product grid below (JS filter, no page reload)
+SECTION C — Product Grid
+Layout
+3-column grid on desktop, 2-column on tablet, 1-column on mobile
+Each Card Contains
+Product image | Generic/Brand name | Category badge | Short description (2
+lines) | Composition note | [ Enquire for Price ] button
+Featured Products to List
+Amoxicillin Injection 500mg | Clotrimazole Cream 1% | Cough Syrup (Dry &
+Wet) | Health Tonic 200ml | Eye Drops (Lubricant) | Ear Drops (Antibiotic) |
+Surgical Gloves | Hepatitis B Vaccine | Blood Glucose Test Strips
+SECTION D — Quality Assurance Note
+Banner
+Light blue (#EBF3FB) full-width banner
+Text
+"All products supplied by Layte LifeScience are sourced exclusively from
+DCGI-approved and WHO-GMP certified manufacturers. Each batch comes
+with a Certificate of Analysis (CoA)."
+Icon
+Shield icon with checkmark
+SECTION E — Bulk Enquiry CTA
+Heading
+"Looking for Bulk Orders or Custom Requirements?"
+Text
+"We cater to hospitals, government tenders, pharmacy chains, and
+institutional buyers. Contact us for custom pricing and delivery schedules."
+Button
+[ Submit Bulk Enquiry → ]
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 11 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Page 4 — Quality & Compliance
+This is the single most important trust-building page for a pharmaceutical website. Hospital procurement
+managers, tender committees, and pharmacy chains make decisions based on regulatory compliance. This
+page is what separates professional pharma companies from dealers.
+SECTION A — Page Hero
+H1
+"Our Commitment to Quality"
+Sub-heading
+"Beyond compliance — quality is embedded in every product we supply, every
+process we follow, and every partnership we build."
+Background
+Clean laboratory or quality control imagery with deep blue overlay
+SECTION B — Quality Philosophy
+Heading (H2)
+"Quality Is Not a Department — It Is Our Culture"
+Paragraph 1
+"At Layte LifeScience, quality is not an afterthought — it is the foundation. We
+source exclusively from manufacturers who meet the highest national and
+international regulatory standards, and we conduct our own verification before
+any product enters our supply chain."
+Paragraph 2
+"We believe that every medicine we distribute has a patient at the end. That
+responsibility drives us to maintain zero tolerance for substandard products."
+SECTION C — Certifications Grid
+Heading (H2)
+"Regulatory Approvals & Certifications"
+Sub-text
+"Our products and suppliers are approved and registered under the following
+regulatory bodies:"
+Badge 1
+DCGI — Drug Controller General of India
+Badge 2
+CDSCO — Central Drugs Standard Control Organisation
+Badge 3
+WHO-GMP — World Health Organisation Good Manufacturing Practice
+Badge 4
+ISO 9001:2015 — Quality Management System
+Badge 5
+State Drug Licence — Govt. of Delhi
+Badge 6
+GST Registered Business
+Design
+Each badge = circular/rounded card with logo icon, name, and brief
+description on white background with subtle shadow
+SECTION D — Our Quality Process (4 Steps)
+Step 1
+Source Verification — We audit and verify every manufacturer's regulatory
+status before onboarding them to our supply chain.
+Step 2
+Batch Documentation — Every product shipment is accompanied by a
+Certificate of Analysis (CoA), manufacturer license copy, and batch details.
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 12 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Step 3
+Storage & Cold Chain — Products requiring cold chain storage are handled
+with temperature-controlled logistics to maintain efficacy.
+Step 4
+Delivery & Traceability — Our dispatch process ensures full traceability from
+manufacturer to end customer, with invoice documentation.
+SECTION E — Quality Statement
+Design
+Full-width deep blue (#0D2E4A) background section
+Heading
+"A Promise We Keep Every Day"
+Quote Text
+"We do not just sell medicines — we supply trust. Our customers rely on us
+not just for product availability, but for the assurance that every unit meets the
+standard their patients deserve."
+Attribution
+— Director, Layte LifeScience Pvt. Ltd.
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 13 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Page 5 — Our Capabilities
+This page communicates operational strength, logistics capability, and the professional infrastructure behind the
+supply chain. It answers: 'Can this company actually deliver at scale?'
+SECTION A — Page Hero
+H1
+"Our Capabilities"
+Sub-text
+"From sourcing to delivery — a professional pharmaceutical supply chain built
+for scale, quality, and reliability."
+SECTION B — Supply Chain Strengths
+Heading (H2)
+"How We Deliver Quality at Scale"
+Capability 1
+Wide Product Network — Direct relationships with 50+ DCGI-approved
+manufacturers across India, ensuring consistent supply and competitive
+pricing.
+Capability 2
+Cold Chain Logistics — Temperature-sensitive products (vaccines, biologics,
+certain injectables) are handled with cold-chain compliant packaging and
+refrigerated transport.
+Capability 3
+Fast Turnaround — Standard orders dispatched within 24–48 hours from our
+Delhi warehouse hub. Emergency supply arrangements available for critical
+medicines.
+Capability 4
+Government Tender Experience — Experienced in supplying to government
+hospitals, CGHS empaneled facilities, and tender-based procurement.
+Capability 5
+Documentation Support — Full documentation support including Form 16,
+CoA, manufacturer license, batch records, and invoice documentation.
+Capability 6
+Pan-India Reach — Distribution network covering 20+ states with reliable
+logistics partners for both metro and Tier 2/3 cities.
+SECTION C — Infrastructure Snapshot
+Heading (H2)
+"Our Infrastructure"
+Warehouse
+Delhi-based central warehouse with proper pharmaceutical storage conditions
+— humidity controlled, temperature monitored, properly segregated.
+Inventory System
+Real-time inventory tracking for stock availability, expiry management, and
+batch traceability.
+Team
+Experienced pharmaceutical professionals with domain expertise in regulatory
+compliance, product knowledge, and logistics.
+SECTION D — Markets Served
+Heading (H2)
+"Markets & Sectors We Serve"
+Sector 1
+Private Hospitals & Nursing Homes
+Sector 2
+Government Hospitals & PHCs
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 14 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Sector 3
+Retail & Chain Pharmacies
+Sector 4
+Distributors & Stockists
+Sector 5
+Diagnostic Centers
+Sector 6
+Export — Semi-regulated & Non-regulated Markets
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 15 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Page 6 — Leadership / Team
+People trust people before they trust companies. A leadership page with real photos, credentials, and a
+personal message is one of the highest-converting trust signals on any B2B website.
+SECTION A — Page Hero
+H1
+"Meet Our Leadership"
+Sub-text
+"The people behind Layte LifeScience — committed to quality, guided by
+integrity, and driven by a shared mission to make quality medicines
+accessible."
+SECTION B — Director / Founder Profile
+Design
+Split layout — professional photo on left, bio on right (or top/bottom on mobile)
+Heading
+Name of Director — Managing Director
+Bio paragraph
+"[Director Name] founded Layte LifeScience with a vision to create a
+pharmaceutical supply company that prioritizes quality over volume, and trust
+over transaction. With [X] years of experience in the pharmaceutical industry,
+[he/she] brings deep expertise in regulatory compliance, supply chain
+management, and B2B pharmaceutical distribution."
+Sub-quote (pull quote)
+"Our patients cannot see us — but they depend on us. That invisible
+responsibility is what drives every decision we make."
+Credentials to list
+Years of experience | Industry specialization | Associations / memberships (if
+any)
+SECTION C — Team Overview (if team exists)
+Heading (H2)
+"Our Core Team"
+Team Cards
+Photo + Name + Role + 2-line bio for each team member (Sales, Operations,
+Quality, Logistics)
+If limited team
+Show 3–4 functional icons (Sales, Operations, Quality, Finance) with
+descriptive text instead of individual photos
+SECTION D — Message from Management
+Background
+Off-white (#F5F5F0) section
+Heading (H2)
+"A Message from Our Director"
+Message text
+"In a world where the pharmaceutical supply chain is often opaque and trust is
+hard to earn, we built Layte LifeScience on a simple promise: that every
+product we supply will be genuine, every delivery will be on time, and every
+partner will be treated as a long-term relationship. We are not just here to fulfill
+an order — we are here to be the backbone of your pharmaceutical supply."
+Signature line
+— [Director Name], Founder & Managing Director, Layte LifeScience Pvt. Ltd.
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 16 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Page 7 — Contact Us
+The Contact page must remove friction. Multiple contact channels, a smart enquiry form, WhatsApp integration,
+and clear business hours all contribute to higher conversion.
+SECTION A — Page Hero (minimal)
+H1
+"Get In Touch"
+Sub-text
+"Whether you are a hospital procurement manager, a pharmacy owner, or a
+distribution partner — we are here to help. Reach out to us and our team will
+respond within 24 hours."
+SECTION B — Contact Info Cards (3 columns)
+Card 1 — Office
+S-134/267, Harijan Camp, Lodhi Road, Near MC Market, New Delhi – 110003,
+Delhi, India
+Card 2 — Phone / WhatsApp
++91 6003214247 | WhatsApp button that opens wa.me/916003214247
+Card 3 — Email
+laytelifescience@gmail.com | Business Hours: Mon–Sun, 10:00 AM – 7:00
+PM
+SECTION C — Enquiry Form
+Fields
+Full Name* | Company / Hospital Name* | Mobile Number* | Email | Type of
+Enquiry (dropdown: Product Enquiry / Bulk Order / Partnership / General) |
+Message*
+Submit Button
+[ Send Enquiry ] — Red (#E8402A) background, white text
+Note below form
+"We typically respond within 4–8 business hours. For urgent requirements,
+please WhatsApp us directly."
+SECTION D — Google Map
+Embed
+Google Maps embed showing exact location — Near Lodhi Colony, New Delhi
+Height
+400px on desktop, 280px on mobile
+SECTION E — WhatsApp Floating Button
+Design
+Fixed floating WhatsApp green button, bottom-right corner on all pages
+Text on hover
+"Chat with us on WhatsApp"
+Link
+wa.me/916003214247
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 17 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION 4
+Video Strategy — Where, What & Why
+Video placement map, content guidance, and production notes for building maximum trust.
+4.1 Video Placement Map
+Dr. Reddy's uses video as a primary trust mechanism — not decoration. Every video placement on their site
+serves a specific emotional or informational purpose. We replicate this strategy for Layte LifeScience with 3
+high-impact video placements.
+#
+Page
+Placement
+Video Type
+Purpose & Content
+V1
+Homepage
+Hero Section — Before Stats Counter
+Brand / Facility Walkthrough
+15–30 second loop showing the warehouse, product range, packaging process, team at work. No audio required (muted autoplay). Creates immediate visual credibility. This is the MOST important video.
+V2
+Quality & Compliance
+After Quality Process Steps — Before CTA Banner
+Quality Commitment Video
+30–60 second video of director speaking directly to camera about quality commitment. OR a facility walkthrough showing storage conditions, batch documentation, cold chain handling. Adds personal trust.
+V3
+About Us
+After Our Story section — Before Values
+Company Story / Director Message
+60–90 second video of the founder/director speaking about the company's mission, why they started, and what quality means to them. Most powerful trust signal — people buy from people they can see.
+4.2 Video Production Notes
+ If professional video is not immediately available, use a high-quality stock video of pharmaceutical
+manufacturing/laboratory as a TEMPORARY hero placeholder — but replace with real footage ASAP.
+ Hero video should be hosted on your own server or CDN (not YouTube) — it should autoplay, loop, be
+muted, and load fast. Recommended format: MP4, H.264, 1920x1080, under 8MB.
+ Director message videos (V2, V3) can be filmed with a good smartphone in a clean, well-lit room —
+professional quality editing is more important than expensive equipment.
+ Add subtitles to all spoken-word videos — many users browse with sound off on mobile.
+ On mobile devices, show a static image fallback instead of autoplay video for performance.
+ Thumbnail for embedded videos: use a professional still frame with a centered play button overlay.
+ All videos must have proper lighting, clear audio (if spoken), and a clean, uncluttered background.
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 18 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION 5
+Trust-Building Elements
+Specific design components that convert skeptical visitors into confident buyers.
+5.1 Stats Counter Section
+Animated number counters are one of the highest-impact trust elements on pharmaceutical websites. They
+communicate scale, experience, and confidence — especially when placed immediately after the hero.
+Layout
+Dark navy (#0D2E4A) background, full-width section, 4 stats in a row
+Counter 1
+"10+" — Years of Experience
+Counter 2
+"500+" — Products in Portfolio
+Counter 3
+"20+" — States We Serve
+Counter 4
+"1,000+" — Institutional Clients
+Animation
+JavaScript count-up from 0 to target value when section scrolls into viewport
+Typography
+72px bold blue numbers (#1B5E9B) + 18px white label below each
+Dividers
+Thin vertical dividers (rgba white 0.2) between each stat
+5.2 Certifications & Compliance Badges
+ Display certification badges prominently on both the Quality page AND the homepage footer area
+ Each badge should be a clean card: white background, certification logo/icon, name, and issuing body
+ Include: DCGI Registration | CDSCO License | WHO-GMP Compliance | State Drug License | GST
+Registration
+ If you have a physical certificate document, add a 'Download Certificate' PDF link
+ Badge row should also appear in the website footer on every page — this is a constant trust signal
+5.3 Testimonials & Social Proof
+ Minimum 4–6 testimonials — ideally from hospital pharmacists, procurement managers, or distributors
+ Include: Full name, designation (e.g. 'Chief Pharmacist'), and organization name
+ Use a professional avatar/initials circle if no photo is available
+ Add a star rating (4–5 stars) above each testimonial text
+ Card slider or 2-column grid layout — avoid 3 columns on mobile
+ Consider adding a "Google Reviews" badge/link if the business has Google My Business reviews
+5.4 Partner / Client Logos Strip
+ Add a 'Trusted By' or 'Our Partners' logo strip on the homepage between Products and Testimonials
+ Show logos of hospitals, pharmacy chains, or manufacturer partners you work with (with permission)
+ Grayscale logos on white background — auto-scrolling marquee or static 5-column grid
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 19 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+ If no logos available yet, use a 'Partner with Us' CTA card in the same position
+ Dr. Reddy's shows Gates Foundation, Sanofi, Alvotech — you should show your manufacturer brands
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 20 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION 6
+Navigation & Footer Architecture
+Mega-menu structure, footer layout, and global navigation specifications.
+6.1 Mega-Menu Navigation
+Menu Item
+Dropdown Children
+Notes
+Home
+— (no dropdown)
+Direct link to homepage
+About Us
+Company Overview | Our Story | Leadership Team
+3 child links, dropdown on hover
+Products
+Injectable Antibiotics | Antifungals | Syrups & Tonics | Eye & Ear Drops | Surgical Goods | Vaccines | Diagnostics | All Products
+Full mega-menu panel
+Quality
+Quality Philosophy | Certifications | Our Process
+Links within Quality page sections
+Capabilities
+Supply Chain | Infrastructure | Markets Served
+Links within Capabilities page
+Contact Us
+— (no dropdown)
+Direct link to contact page
+Enquire Now
+— (CTA button)
+Red (#E8402A) filled button, right side of nav
+6.2 Footer Layout (4 columns)
+Column 1
+Column 2
+Column 3
+Column 4
+Company Logo
+Tagline (1 line)
+Brief description (2 lines)
+Social media icons
+Quick Links:
+ Home
+ About Us
+ Products
+ Quality
+ Capabilities
+ Contact
+Product Categories:
+ Injectable Antibiotics
+ Antifungals
+ Syrups
+ Vaccines
+ Surgical Goods
+ Diagnostics
+Contact Info:
+Address
+Phone / WhatsApp
+Email
+Business Hours
+Certification badges row
+ Footer background: #0D2E4A (Authority Navy)
+ Footer text: #B8D4EE (light blue) for secondary, White for headings
+ Bottom bar: #1B5E9B strip with copyright, privacy policy link, and 'Made in India' note
+ Certification badge icons in column 4 below contact info
+ WhatsApp floating button must be visible from footer scroll position
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 21 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION 7
+Priority Changes — Developer Action
+Checklist
+Ordered by urgency. Complete Critical items before moving to High priority.
+Change Item
+Priority
+Description
+Multi-page architecture
+Critical
+Convert from single-page to 7 separate pages with unique URLs,
+meta titles, and structured content
+Hero redesign with video
+Critical
+Full-screen video/cinematic hero with tagline, dual CTA buttons,
+and trust strip
+Color scheme overhaul
+Critical
+Replace all generic blues with #1B5E9B, navy with #0D2E4A,
+background with #F5F5F0
+Mega-menu navigation
+Critical
+Replace flat anchor links with structured dropdown/mega-menu
+navigation
+Quality & Compliance
+page
+Critical
+Build complete quality page with certifications grid, process steps,
+and quality statement
+Stats counter section
+Critical
+Animated number counters on homepage — Years, Products,
+States, Clients
+Typography upgrade
+High
+Implement Inter/Plus Jakarta Sans, increase heading sizes to
+56–72px on desktop
+Leadership page
+High
+Build team/leadership page with director profile, bio, and message
+from management
+Product detail cards
+High
+Upgrade product cards with proper imagery, composition info, and
+enquiry CTA
+Testimonials upgrade
+High
+Expand to 4–6 testimonials with designation and organization
+details
+Capabilities page
+High
+Build capabilities page covering supply chain, infrastructure, and
+markets served
+Footer rebuild
+High
+4-column footer with sitemap, certifications badges, and contact info
+WhatsApp floating
+button
+High
+Persistent floating WhatsApp button on all pages
+Director message video
+Medium
+Film and embed 60-90 second director message on About Us page
+Partner logos strip
+Medium
+Add manufacturer/partner logos strip on homepage
+Google Reviews
+integration
+Medium
+Link Google My Business page and display review count/rating
+SEO meta tags
+Medium
+Unique meta title, meta description for each of the 7 pages
+Mobile responsiveness
+audit
+Medium
+Full mobile audit on all 7 pages — especially mega-menu and
+product grid
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 22 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+SECTION 8
+Master AI Development Prompt
+A complete, single prompt that encapsulates this entire SRS — use with any AI code assistant.
+The following prompt is a dense extract of this entire SRS document. You can paste it directly into an AI code
+assistant (Claude, ChatGPT, Cursor, v0.dev, etc.) to begin building any page or component of the Layte
+LifeScience website. It contains all critical design decisions, content guidelines, color values, and page
+architecture in one single context block.
+MASTER PROMPT — Copy & Paste into Your AI Assistant
+=== LAYTE LIFESCIENCE WEBSITE REDESIGN — FULL SRS CONTEXT ===
+[PROJECT]
+Build a professional pharmaceutical company website for Layte LifeScience Pvt. Ltd. (New Delhi,
+India). The design must replicate the trust, authority, and visual language of Dr. Reddy's
+Laboratories (drreddys.com). The current site (laytelifesciencepvtltd.vercel.app) is a
+single-page scroll site that needs to become a 7-page multi-page website.
+[DESIGN SYSTEM]
+Primary Blue: #1B5E9B | Authority Navy: #0D2E4A | CTA Red: #E8402A | Background: #F5F5F0 | Body
+Text: #1A1A1A | Muted Gray: #6B7280 | Light Border: #E5E7EB | Pale Blue Fill: #EBF3FB
+Font: Inter or Plus Jakarta Sans. H1: 56-72px bold navy. H2: 36-42px bold navy. H3: 22-26px
+semi-bold blue. Body: 15-16px regular #1A1A1A. Stats numbers: 72px bold #1B5E9B.
+Sections alternate white and #F5F5F0. Button border-radius: 6px. Card border-radius: 8-12px.
+All transitions: 0.3s ease. Max-width: 1280px centered.
+[NAVIGATION]
+Mega-menu with dropdowns. Items: Home | About Us (Company, Story, Leadership) | Products (8
+categories mega-menu) | Quality | Capabilities | Contact Us | [Enquire Now] red CTA button.
+Sticky on scroll, white background, shadow on scroll.
+[PAGE 1 — HOMEPAGE]
+Hero: Full-screen video/cinematic image, navy overlay 0.55 opacity. H1: "Quality Medicines,
+Delivered with Integrity." Sub: "Trusted pharmaceutical supplier to hospitals, pharmacies, and
+distributors across India." Two CTAs: [Explore Our Products] [Enquire Now]. Trust strip:
+WHO-GMP Compliant | DCGI Registered | 10+ Years Experience | Pan-India Delivery.
+Stats Counter (navy bg): 10+ Years | 500+ Products | 20+ States | 1,000+ Clients. Animated
+count-up on scroll.
+About Snapshot: H2 "Who We Are" + 3-line company description + [Read Our Story] CTA.
+Products Grid: H2 "Our Product Portfolio" + 8 category cards (Injectable Antibiotics,
+Antifungal Creams, Syrups, Tonics, Eye & Ear Drops, Surgical Goods, Vaccines, Diagnostics) with
+icon + name + 1-line desc + [View Products] link.
+Quality Strip: Blue banner. "Every product meets WHO-GMP and CDSCO standards. Batch
+documentation provided." + [See Certifications].
+6 Why-Choose-Us cards: Genuine Products | Competitive Pricing | Pan-India Delivery | Dedicated
+Support | Regulatory Compliance | Wide Range.
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 23 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Testimonials: 4-6 cards with name, designation, organization, star rating.
+CTA Banner: Deep blue bg. "Ready to Partner With Us?" + [Send Enquiry] [WhatsApp Us].
+[PAGE 2 — ABOUT US]
+Hero: navy overlay image. H1: "About Layte LifeScience". Mission: "To ensure that quality
+medicines reach every hand — from metro hospitals to rural clinics — with integrity,
+reliability, and compassion." Vision statement. Company story 3 paragraphs. 4 Values cards:
+Integrity & Transparency | Quality First | Patient Safety | Reliable Partnership. Presence
+section with states covered.
+[PAGE 3 — PRODUCTS / CATALOG]
+H1: "Our Product Portfolio". Filter tabs for 8 categories. 3-column product grid — each card:
+image + name + category badge + 2-line desc + composition + [Enquire for Price] button. Quality
+assurance banner (pale blue). Bulk Enquiry CTA section.
+[PAGE 4 — QUALITY & COMPLIANCE]
+H1: "Our Commitment to Quality". Philosophy section: 2 paragraphs about zero-tolerance quality.
+Certifications grid (badge cards): DCGI | CDSCO | WHO-GMP | ISO 9001:2015 | State Drug Licence
+| GST Registered. 4-step quality process: Source Verification -> Batch Documentation -> Storage
+& Cold Chain -> Delivery & Traceability. Full-width dark blue quote section from Director.
+[PAGE 5 — OUR CAPABILITIES]
+H1: "Our Capabilities". 6 capability cards: Wide Product Network | Cold Chain Logistics | Fast
+Turnaround | Govt Tender Experience | Documentation Support | Pan-India Reach. Infrastructure
+section: warehouse, inventory, team. Markets served: Private Hospitals | Govt Hospitals |
+Pharmacies | Distributors | Diagnostic Centers | Export.
+[PAGE 6 — LEADERSHIP]
+H1: "Meet Our Leadership". Director profile: photo left, bio right. Pull quote from director.
+Team cards if multiple members. Message from Management section with full-width off-white bg,
+quote text, and signature line.
+[PAGE 7 — CONTACT US]
+H1: "Get In Touch". 3 contact cards: Address (S-134/267, Harijan Camp, Lodhi Road, New Delhi
+110003) | Phone +91 6003214247 + WhatsApp | Email laytelifescience@gmail.com + Hours (Mon-Sun
+10AM-7PM). Enquiry form: Name, Company, Mobile, Email, Enquiry Type (dropdown), Message. Google
+Maps embed. Response time note.
+[VIDEO PLACEMENTS]
+V1 (Homepage Hero): 15-30s autoplay muted loop — warehouse/facility walkthrough. V2 (Quality
+Page, after process steps): 30-60s — Director quality commitment speech OR facility video. V3
+(About Us, after story): 60-90s — Director speaking about company mission and values.
+[GLOBAL ELEMENTS]
+Floating WhatsApp button: bottom-right, all pages, green (#25D366), links to
+wa.me/916003214247. Certifications badge strip in footer. Footer: 4 columns (logo+desc+social |
+quick links | product categories | contact info). Footer bg: #0D2E4A. Bottom bar: #1B5E9B with
+copyright.
+[TRUST SIGNALS CHECKLIST]
+Stats counter animated | Certification badges | Director message video | Testimonials with
+designation | Partner/manufacturer logos strip | Quality process steps | Regulatory compliance
+declarations | WhatsApp + phone CTA always visible | Fast response time promise
+=== END OF SRS CONTEXT — BUILD WITH THIS SPECIFICATION ===
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 24 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026
+
+Document Information
+SRS Version 1.0 — Prepared 07 May 2026
+Prepared For
+Layte LifeScience Pvt. Ltd. — New Delhi, India
+Reference Site
+Dr. Reddy's Laboratories — drreddys.com
+Current Site
+laytelifesciencepvtltd.vercel.app
+Confidentiality
+This document is confidential and prepared exclusively for the Layte LifeScience
+website development project.
+Layte LifeScience Pvt. Ltd. — Software Requirements Specification
+Page 25 of 25
+SRS v1.0 — Layte LifeScience Website Redesign
+Confidential — 07 May 2026

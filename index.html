@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layte LifeScience Private
         Limited - Pharmaceuticals</title>
-    <link rel="icon" href="images/logo.jpeg" type="image/jpeg">
+    <link rel="icon" href="images/logo1.png" type="image/jpeg">
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Layte LifeScience Private
@@ -23,11 +23,11 @@ Limited is a top and well known Pharmaceutical Products Dealer  Delhi. Quality d
             theme: {
                 extend: {
                     colors: {
-                        primary: '#11b3c3',
-                        'primary-hover': '#179397',
-                        secondary: '#e2cc15',
-                        dark: '#1a1a1a',
-                        light: '#f3f4f6'
+                        primary: '#1B5E9B',
+                        'primary-hover': '#154e82',
+                        secondary: '#E8402A',
+                        dark: '#0D2E4A',
+                        light: '#F5F5F0'
                     }
                 }
             }
@@ -44,746 +44,514 @@ Limited is a top and well known Pharmaceutical Products Dealer  Delhi. Quality d
 <body class="bg-gray-50 text-gray-800">
 
     <!-- Navigation Bar -->
-    <nav class="bg-white shadow-md sticky top-0 z-50 glass-panel">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20">
-                <div class="flex items-center">
-                    <a href="#home" class="flex-shrink-0 flex items-center pr-4">
-                        <img class="h-16 w-auto object-contain rounded-md" src="images/logo.jpeg"
-                            alt="Layte LifeScience Logo">
-                    </a>
-                    <div class="hidden md:ml-6 md:flex md:space-x-8">
-                        <a href="#home"
-                            class="nav-link text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Home</a>
-                        <a href="#categories"
-                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Categories</a>
-                        <a href="#products"
-                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Products</a>
-                        <a href="#about"
-                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">About
-                            Us</a>
-                        <a href="#gallery"
-                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Gallery</a>
-                        <a href="#contact"
-                            class="nav-link text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium font-roboto">Contact</a>
+    <nav class="bg-white shadow-md sticky top-0 z-50 glass-panel navbar">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo1.png" alt="Layte LifeScience Logo">
+            </a>
+
+            <div class="nav-links hidden md:flex">
+                <a href="index.html" class="nav-link active">Home</a>
+                <div class="nav-item">
+                    <a href="about.html" class="nav-link">About Us <i
+                            class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
+                    <div class="dropdown">
+                        <a href="about.html">Company Overview</a>
+                        <a href="about.html#story">Our Story</a>
+                        <a href="leadership.html">Leadership Team</a>
                     </div>
                 </div>
-                <div class="hidden md:flex items-center">
-                    <a href="#contact" class="btn-primary px-6 py-2 rounded-md font-medium text-sm">Enquire Now</a>
+                <div class="nav-item">
+                    <a href="products.html" class="nav-link">Products <i
+                            class="fa-solid fa-chevron-down text-xs ml-1"></i></a>
+                    <div class="mega-menu">
+                        <a href="products.html" class="mega-item"><i class="fa-solid fa-syringe icon text-primary"></i>
+                            Injectable Antibiotics</a>
+                        <a href="products.html" class="mega-item"><i
+                                class="fa-solid fa-hand-dots icon text-primary"></i> Antifungals</a>
+                        <a href="products.html" class="mega-item"><i
+                                class="fa-solid fa-prescription-bottle-medical icon text-primary"></i> Syrups &
+                            Tonics</a>
+                        <a href="products.html" class="mega-item"><i class="fa-solid fa-eye icon text-primary"></i> Eye
+                            & Ear Drops</a>
+                        <a href="products.html" class="mega-item"><i
+                                class="fa-solid fa-kit-medical icon text-primary"></i> Surgical Goods</a>
+                        <a href="products.html" class="mega-item"><i
+                                class="fa-solid fa-shield-virus icon text-primary"></i> Vaccines</a>
+                        <a href="products.html" class="mega-item"><i class="fa-solid fa-vial icon text-primary"></i>
+                            Diagnostics</a>
+                        <a href="products.html" class="mega-item"><i
+                                class="fa-solid fa-layer-group icon text-primary"></i> All Products</a>
+                    </div>
                 </div>
-                <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" id="mobile-menu-button"
-                        class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
+                <a href="quality.html" class="nav-link">Quality</a>
+                <a href="capabilities.html" class="nav-link">Capabilities</a>
+                <a href="contact.html" class="nav-link">Contact Us</a>
             </div>
+
+            <div class="nav-cta hidden md:flex">
+                <a href="contact.html" class="btn btn-cta">Enquire Now</a>
+            </div>
+
+            <button type="button" id="mobile-menu-button" class="nav-hamburger md:hidden">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
 
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
-            <div class="pt-2 pb-3 shadow-inner">
-                <a href="#home"
-                    class="block pl-3 pr-4 py-2 border-l-4 border-primary text-base font-medium text-primary bg-indigo-50 font-roboto">Home</a>
-                <a href="#categories"
-                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">Categories</a>
-                <a href="#products"
-                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">Products</a>
-                <a href="#about"
-                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">About
-                    Us</a>
-                <a href="#gallery"
-                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">Gallery</a>
-                <a href="#contact"
-                    class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 font-roboto">Contact</a>
+        <div id="mobile-menu" class="nav-mobile">
+            <button class="nav-mobile-close" id="mobile-menu-close"><i class="fa-solid fa-xmark"></i></button>
+            <a href="index.html" class="nav-mobile-link text-primary">Home</a>
+            <div class="nav-item">
+                <a href="about.html" class="nav-mobile-link">About Us</a>
+                <div class="nav-mobile-sub">
+                    <a href="about.html">Company Overview</a>
+                    <a href="about.html#story">Our Story</a>
+                    <a href="leadership.html">Leadership Team</a>
+                </div>
             </div>
+            <div class="nav-item">
+                <a href="products.html" class="nav-mobile-link">Products</a>
+                <div class="nav-mobile-sub">
+                    <a href="products.html">Injectable Antibiotics</a>
+                    <a href="products.html">Antifungals</a>
+                    <a href="products.html">Syrups & Tonics</a>
+                    <a href="products.html">Eye & Ear Drops</a>
+                    <a href="products.html">Surgical Goods</a>
+                    <a href="products.html">Vaccines</a>
+                    <a href="products.html">Diagnostics</a>
+                    <a href="products.html">All Products</a>
+                </div>
+            </div>
+            <a href="quality.html" class="nav-mobile-link">Quality</a>
+            <a href="capabilities.html" class="nav-mobile-link">Capabilities</a>
+            <a href="contact.html" class="nav-mobile-link">Contact Us</a>
+            <a href="contact.html" class="btn btn-cta mt-6 text-center w-full">Enquire Now</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="home" class="relative bg-black hidden sm:block h-[80vh] min-h-[600px]">
-        <div class="absolute inset-0">
-            <img class="w-full h-full object-cover" src="images/Hero section image.jpg" alt="Pharmacy Header">
-            <div class="absolute inset-0 hero-gradient-overlay mix-blend-multiply" aria-hidden="true"></div>
+    <!-- SECTION 1 — HERO (full screen) -->
+    <header id="home" class="hero ll-hero">
+        <div class="hero-bg ll-hero-bg" aria-hidden="true">
+            <video autoplay loop muted playsinline poster="images/Hero section image.jpg"
+                style="width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; z-index: 0;">
+                <source src="images/hero-video.mp4" type="video/mp4">
+            </video>
         </div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-full flex items-center">
-            <div class="text-left w-full sm:w-2/3 lg:w-1/2 fadeInUp-on-scroll delay-100">
-                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl mb-4">
-                    <span class="block">Providing Quality Driven</span>
-                    <span class="block text-secondary">Pharmaceutical Products</span>
-                </h1>
-                <p class="mt-3 max-w-md text-base text-gray-200 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-                    Top Pharmaceutical Products Dealer located Delhi serving globally.
-                </p>
-                <div class="mt-10 flex flex-wrap gap-4">
-                    <div class="rounded-md shadow">
-                        <a href="#contact"
-                            class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-hover md:py-4 md:text-lg transition-colors">
-                            Enquire Now
-                        </a>
+        <div class="hero-content ll-hero-content text-center">
+            <div class="fade-up">
+                <h1>Quality Medicines, Delivered with Integrity.</h1>
+                <p>Trusted pharmaceutical supplier to hospitals, pharmacies, and distributors across India.</p>
+
+                <div class="hero-btns ll-hero-btns">
+                    <a href="products.html" class="btn btn-outline">Explore Our Products</a>
+                    <a href="contact.html" class="btn btn-cta">Enquire Now <span aria-hidden="true">→</span></a>
+                </div>
+
+                <div class="ll-hero-trust" aria-label="Trust indicators">
+                    <div class="ll-trust-item"><span class="ll-trust-check" aria-hidden="true">✓</span> WHO-GMP
+                        Compliant</div>
+                    <div class="ll-trust-item"><span class="ll-trust-check" aria-hidden="true">✓</span> DCGI Registered
                     </div>
+                    <div class="ll-trust-item"><span class="ll-trust-check" aria-hidden="true">✓</span> 10+ Years
+                        Experience</div>
+                    <div class="ll-trust-item"><span class="ll-trust-check" aria-hidden="true">✓</span> Pan-India
+                        Delivery</div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <!-- Mobile Hero -->
-    <header class="relative bg-black sm:hidden h-[60vh] min-h-[400px]">
-        <div class="absolute inset-0">
-            <img class="w-full h-full object-cover object-center" src="images/Hero section image for mobile.jpg"
-                alt="Pharmacy Header Mobile">
-            <div class="absolute inset-0 bg-black bg-opacity-60 mix-blend-multiply" aria-hidden="true"></div>
-        </div>
-        <div class="relative px-4 h-full flex flex-col justify-center text-center fadeInUp-on-scroll">
-            <h1 class="text-3xl font-extrabold text-white mb-3">
-                Providing Quality Driven<br>
-                <span class="text-secondary text-4xl">Pharmaceuticals</span>
-            </h1>
-            <a href="#contact"
-                class="inline-block px-6 py-3 mt-4 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-primary-hover mx-auto">Enquire
-                Now</a>
         </div>
     </header>
 
-    <!-- Categories Section -->
-    <section id="categories" class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fadeInUp-on-scroll">
-                <h2 class="text-sm font-semibold text-primary tracking-wide uppercase">Categories</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Our Product Range
+    <!-- SECTION 2 — STATS COUNTER (navy background) -->
+    <section class="stats-section" aria-label="Company statistics">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                <div class="stat-label">Years in Business</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="500" data-suffix="+">0</div>
+                <div class="stat-label">Products</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="20" data-suffix="+">0</div>
+                <div class="stat-label">States Served</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="1000" data-suffix="+">0</div>
+                <div class="stat-label">Institutional Clients</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3 — ABOUT SNAPSHOT (white background) -->
+    <section id="about" class="section section--white">
+        <div class="container">
+            <div class="grid-2 ll-about-snapshot">
+                <div class="fade-up">
+                    <h2 class="mb-24">Who We Are</h2>
+                    <p class="text-body">
+                        Layte LifeScience Pvt. Ltd. is a New Delhi-based pharmaceutical supplier with over a decade of
+                        experience providing world-class quality medicines to hospitals, clinics, pharmacies, and
+                        distributors across India. We are committed to affordability, quality, and timely delivery.
+                    </p>
+                    <a class="ll-link-cta" href="contact.html">Read Our Full Story <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="fade-up">
+                    <div class="ll-about-image">
+                        <img src="images/about section image.webp" alt="Layte LifeScience team and facility">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4 — PRODUCT CATEGORIES (#F5F5F0 background) -->
+    <section id="categories" class="section section--bg ll-portfolio">
+        <div class="container">
+            <span id="products" aria-hidden="true"></span>
+            <div class="ll-section-heading text-center fade-up">
+                <h2>Our Product Portfolio</h2>
+                <p>Comprehensive pharmaceutical solutions across 8 therapeutic categories</p>
+            </div>
+
+            <div class="ll-category-grid">
+                <article class="ll-category-card fade-up">
+                    <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-syringe"></i></div>
+                    <h3 class="ll-cat-title">Injectable Antibiotics</h3>
+                    <p class="ll-cat-desc">Sterile injectables for hospital-grade infection management.</p>
+                    <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="ll-category-card fade-up">
+                    <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-bandage"></i></div>
+                    <h3 class="ll-cat-title">Antifungal Creams</h3>
+                    <p class="ll-cat-desc">Topicals formulated for effective dermatological care.</p>
+                    <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="ll-category-card fade-up">
+                    <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-prescription-bottle-medical"></i>
+                    </div>
+                    <h3 class="ll-cat-title">Pharmaceutical Syrups</h3>
+                    <p class="ll-cat-desc">Reliable oral liquids for pediatric and adult therapies.</p>
+                    <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="ll-category-card fade-up">
+                    <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-capsules"></i></div>
+                    <h3 class="ll-cat-title">Tonics &amp; Supplements</h3>
+                    <p class="ll-cat-desc">Nutraceutical and wellness range for daily support.</p>
+                    <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="ll-category-card fade-up">
+                    <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></div>
+                    <h3 class="ll-cat-title">Eye &amp; Ear Drops</h3>
+                    <p class="ll-cat-desc">Specialized drops for ophthalmic and otic needs.</p>
+                    <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="ll-category-card fade-up">
+                    <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-kit-medical"></i></div>
+                    <h3 class="ll-cat-title">Surgical Goods &amp; Devices</h3>
+                    <p class="ll-cat-desc">Essential disposables and devices for clinical use.</p>
+                    <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="ll-category-card fade-up">
+                    <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-shield-virus"></i></div>
+                    <h3 class="ll-cat-title">Vaccines &amp; Serums</h3>
+                    <p class="ll-cat-desc">Cold-chain sensitive supplies with verified handling.</p>
+                    <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
+                </article>
+                <article class="ll-category-card fade-up">
+                    <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-vial"></i></div>
+                    <h3 class="ll-cat-title">Diagnostic Products</h3>
+                    <p class="ll-cat-desc">Trusted diagnostic essentials for accurate testing workflows.</p>
+                    <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
+                </article>
+            </div>
+
+            <div class="ll-portfolio-cta fade-up">
+                <a class="ll-link-cta" href="products.html">View Full Product Catalog <span
+                        aria-hidden="true">→</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5 — QUALITY STRIP (pale blue #EBF3FB, full-width banner) -->
+    <section class="ll-quality-strip" aria-label="Quality compliance statement">
+        <div class="container ll-quality-inner">
+            <div class="ll-quality-left">
+                <div class="ll-quality-icon" aria-hidden="true">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        <path d="m9 12 2 2 4-4"></path>
+                    </svg>
+                </div>
+                <p class="ll-quality-text">
+                    Every product we supply meets WHO-GMP and CDSCO regulatory standards. Full batch documentation and
+                    Certificate of Analysis provided with every shipment.
                 </p>
             </div>
-
-            <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Category Item 1 -->
-                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-100">
-                    <div class="img-wrap w-full h-48 sm:h-56">
-                        <img src="images/categories/image1.webp" alt="Injectable Antibiotics"
-                            class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Injectable Antibiotics</h3>
-                </div>
-                <!-- Category Item 2 -->
-                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-200">
-                    <div class="img-wrap w-full h-48 sm:h-56">
-                        <img src="images/categories/image2.webp" alt="Antifungal Creams"
-                            class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Antifungal Creams</h3>
-                </div>
-                <!-- Category Item 3 -->
-                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-300">
-                    <div class="img-wrap w-full h-48 sm:h-56">
-                        <img src="images/categories/image3.webp" alt="Syrups" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Pharmaceutical Syrups</h3>
-                </div>
-                <!-- Category Item 4 -->
-                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-400">
-                    <div class="img-wrap w-full h-48 sm:h-56">
-                        <img src="images/categories/image4.webp" alt="Tonics" class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Tonics</h3>
-                </div>
-                <!-- Category Item 5 -->
-                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-400">
-                    <div class="img-wrap w-full h-48 sm:h-56">
-                        <img src="images/categories/image5.webp" alt="Eye & Ear Drops"
-                            class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Eye & Ear Drops</h3>
-                </div>
-                <!-- Category Item 6 -->
-                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-500">
-                    <div class="img-wrap w-full h-48 sm:h-56">
-                        <img src="images/categories/surgical_goods.png" alt="Surgical Goods & Devices"
-                            class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Surgical Goods & Devices</h3>
-                </div>
-                <!-- Category Item 7 -->
-                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-500">
-                    <div class="img-wrap w-full h-48 sm:h-56">
-                        <img src="images/categories/vaccines_serums.png" alt="Vaccines & Serums"
-                            class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Vaccines & Serums</h3>
-                </div>
-                <!-- Category Item 8 -->
-                <div class="flex flex-col items-center hover-scale fadeInUp-on-scroll delay-600">
-                    <div class="img-wrap w-full h-48 sm:h-56">
-                        <img src="images/categories/diagnostic_products.png" alt="Diagnostic Products"
-                            class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="mt-4 text-lg font-medium text-gray-900 text-center">Diagnostic Products</h3>
-                </div>
+            <div class="ll-quality-right">
+                <a class="btn btn-outline-blue" href="quality.html">See Our Certifications <span
+                        aria-hidden="true">→</span></a>
             </div>
         </div>
     </section>
 
-    <!-- Feature Products Section -->
-    <section id="products" class="py-16 bg-gray-50 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fadeInUp-on-scroll">
-                <h2 class="text-sm font-semibold text-primary tracking-wide uppercase">Best Sellers</h2>
-                <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    Featured Products
+    <!-- PARTNER LOGOS STRIP -->
+    <section class="section section--white border-t border-gray-200">
+        <div class="container text-center">
+            <h4 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-8">Trusted by Leading Healthcare
+                Institutions</h4>
+            <div
+                class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all">
+                <div class="text-xl font-bold text-gray-400"><i class="fa-solid fa-hospital mr-2"></i>CityCare Hospital
+                </div>
+                <div class="text-xl font-bold text-gray-400"><i class="fa-solid fa-prescription-bottle mr-2"></i>Kapoor
+                    Pharmacy</div>
+                <div class="text-xl font-bold text-gray-400"><i class="fa-solid fa-truck-medical mr-2"></i>North India
+                    Pharma</div>
+                <div class="text-xl font-bold text-gray-400"><i class="fa-solid fa-house-medical mr-2"></i>Sunrise
+                    Clinics</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6 — WHY CHOOSE US (white background) -->
+    <section class="section section--white ll-why">
+        <div class="container">
+            <div class="ll-section-heading text-center fade-up">
+                <h2>Why Hospitals &amp; Pharmacies Choose Us</h2>
+            </div>
+
+            <div class="ll-feature-grid">
+                <article class="ll-feature-card fade-up">
+                    <div class="ll-feature-icon" aria-hidden="true"><i class="fa-solid fa-certificate"></i></div>
+                    <h3 class="ll-feature-title">Genuine Products</h3>
+                    <p class="ll-feature-desc">Sourced exclusively from DCGI-approved manufacturers</p>
+                </article>
+                <article class="ll-feature-card fade-up">
+                    <div class="ll-feature-icon" aria-hidden="true"><i class="fa-solid fa-tags"></i></div>
+                    <h3 class="ll-feature-title">Competitive Pricing</h3>
+                    <p class="ll-feature-desc">Best-in-market rates for bulk and institutional orders</p>
+                </article>
+                <article class="ll-feature-card fade-up">
+                    <div class="ll-feature-icon" aria-hidden="true"><i class="fa-solid fa-truck-fast"></i></div>
+                    <h3 class="ll-feature-title">Pan-India Delivery</h3>
+                    <p class="ll-feature-desc">Reliable logistics covering 20+ states</p>
+                </article>
+                <article class="ll-feature-card fade-up">
+                    <div class="ll-feature-icon" aria-hidden="true"><i class="fa-solid fa-headset"></i></div>
+                    <h3 class="ll-feature-title">Dedicated Support</h3>
+                    <p class="ll-feature-desc">Responsive team available Mon–Sun 10AM–7PM</p>
+                </article>
+                <article class="ll-feature-card fade-up">
+                    <div class="ll-feature-icon" aria-hidden="true"><i class="fa-solid fa-file-shield"></i></div>
+                    <h3 class="ll-feature-title">Regulatory Compliance</h3>
+                    <p class="ll-feature-desc">Full documentation with every shipment</p>
+                </article>
+                <article class="ll-feature-card fade-up">
+                    <div class="ll-feature-icon" aria-hidden="true"><i class="fa-solid fa-layer-group"></i></div>
+                    <h3 class="ll-feature-title">Wide Product Range</h3>
+                    <p class="ll-feature-desc">500+ products across 8 categories</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7 — TESTIMONIALS (#F5F5F0 background) -->
+    <section class="section section--bg ll-testimonials" aria-label="Testimonials">
+        <div class="container">
+            <div class="ll-section-heading text-center fade-up">
+                <h2>What Our Partners Say</h2>
+            </div>
+
+            <div class="ll-testimonial-grid">
+                <article class="ll-testimonial-card fade-up">
+                    <div class="ll-stars" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="ll-quote">“Consistent supply, proper documentation, and on-time delivery. We trust Layte
+                        LifeScience for our institutional needs.”</p>
+                    <div class="ll-person">
+                        <div class="ll-avatar" aria-hidden="true">AS</div>
+                        <div>
+                            <div class="ll-name">Ankit Sharma</div>
+                            <div class="ll-meta">Procurement Head • CityCare Hospital</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="ll-testimonial-card fade-up">
+                    <div class="ll-stars" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="ll-quote">“Great pricing for bulk orders and a responsive support team. Queries are
+                        resolved quickly, even on weekends.”</p>
+                    <div class="ll-person">
+                        <div class="ll-avatar" aria-hidden="true">RK</div>
+                        <div>
+                            <div class="ll-name">Ritika Kapoor</div>
+                            <div class="ll-meta">Owner • Kapoor Pharmacy</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="ll-testimonial-card fade-up">
+                    <div class="ll-stars" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="ll-quote">“Professional handling of cold-chain items and reliable logistics. Packaging and
+                        batch details are always clear.”</p>
+                    <div class="ll-person">
+                        <div class="ll-avatar" aria-hidden="true">MJ</div>
+                        <div>
+                            <div class="ll-name">Mohit Jain</div>
+                            <div class="ll-meta">Distributor • North India Pharma</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="ll-testimonial-card fade-up">
+                    <div class="ll-stars" aria-label="5 out of 5 stars">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="ll-quote">“Genuine products from approved manufacturers and smooth coordination from
+                        enquiry to dispatch. Highly recommended.”</p>
+                    <div class="ll-person">
+                        <div class="ll-avatar" aria-hidden="true">SP</div>
+                        <div>
+                            <div class="ll-name">Sana Patel</div>
+                            <div class="ll-meta">Admin • Sunrise Clinic Network</div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8 — CTA BANNER (#1B5E9B background) -->
+    <section class="ll-cta-banner" aria-label="Primary call to action">
+        <div class="container ll-cta-inner">
+            <div class="fade-up">
+                <h2 class="ll-cta-title">Ready to Partner With Us?</h2>
+                <p class="ll-cta-sub">Get in touch today for product enquiries, pricing, and distribution partnerships.
                 </p>
             </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Product 1 -->
-                <div
-                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-100">
-                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
-                        <img src="images/products/image1.avif" alt="Product Item"
-                            class="w-full h-full object-cover mix-blend-multiply">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Amoxicillin Injection 500mg</h3>
-                        <p class="text-sm text-gray-500 mb-4 flex-1">High quality antibiotic for bacterial infections.
-                        </p>
-                        <!-- <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xl font-bold text-gray-900">₹120.00</span>
-                            <div class="flex space-x-2">
-                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
-                                        class="fas fa-shopping-cart"></i></button>
-                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- Product 2 -->
-                <div
-                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-200">
-                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
-                        <img src="images/products/image2.avif" alt="Product Item"
-                            class="w-full h-full object-cover mix-blend-multiply">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Clotrimazole Cream 1%</h3>
-                        <p class="text-sm text-gray-500 mb-4 flex-1">Effective antifungal dermal cream.</p>
-                        <!-- <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xl font-bold text-gray-900">₹85.00</span>
-                            <div class="flex space-x-2">
-                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
-                                        class="fas fa-shopping-cart"></i></button>
-                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- Product 3 -->
-                <div
-                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-300">
-                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
-                        <img src="images/products/image3.avif" alt="Product Item"
-                            class="w-full h-full object-cover mix-blend-multiply">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Cough Syrup Dry & Wet</h3>
-                        <p class="text-sm text-gray-500 mb-4 flex-1">Fast relief from persistent cough.</p>
-                        <!-- <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xl font-bold text-gray-900">₹110.00</span>
-                            <div class="flex space-x-2">
-                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
-                                        class="fas fa-shopping-cart"></i></button>
-                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- Product 4 -->
-                <div
-                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-100">
-                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
-                        <img src="images/products/image4.avif" alt="Product Item"
-                            class="w-full h-full object-cover mix-blend-multiply">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Health Tonic 200ml</h3>
-                        <p class="text-sm text-gray-500 mb-4 flex-1">Multivitamin enriched health tonic.</p>
-                        <!-- <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xl font-bold text-gray-900">₹145.00</span>
-                            <div class="flex space-x-2">
-                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
-                                        class="fas fa-shopping-cart"></i></button>
-                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- Product 5 -->
-                <div
-                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-200">
-                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
-                        <img src="images/products/image5.avif" alt="Product Item"
-                            class="w-full h-full object-cover mix-blend-multiply">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Eye Drops Tears</h3>
-                        <p class="text-sm text-gray-500 mb-4 flex-1">Soothing relief for dry and itchy eyes.</p>
-                        <!-- <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xl font-bold text-gray-900">₹70.00</span>
-                            <div class="flex space-x-2">
-                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
-                                        class="fas fa-shopping-cart"></i></button>
-                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-                <!-- Product 6 -->
-                <div
-                    class="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden hover-scale flex flex-col fadeInUp-on-scroll delay-300">
-                    <div class="h-64 sm:h-72 overflow-hidden img-wrap">
-                        <img src="images/products/image6.avif" alt="Product Item"
-                            class="w-full h-full object-cover mix-blend-multiply">
-                    </div>
-                    <div class="p-6 flex-1 flex flex-col">
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Ear Drops Antibiotic</h3>
-                        <p class="text-sm text-gray-500 mb-4 flex-1">For treating external ear infections.</p>
-                        <!-- <div class="flex items-center justify-between mt-auto">
-                            <span class="text-xl font-bold text-gray-900">₹65.00</span>
-                            <div class="flex space-x-2">
-                                <button class="btn-primary p-2 px-3 rounded-md text-sm"><i
-                                        class="fas fa-shopping-cart"></i></button>
-                                <button class="btn-secondary px-3 py-1.5 rounded-md text-sm font-semibold">Buy</button>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- <div class="mt-12 text-center">
-                <a href="#contact" class="btn-secondary px-8 py-3 rounded-full text-lg font-semibold shadow-sm">View All
-                    Products</a>
-            </div> -->
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-20 lg:py-28 bg-white overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
-                <div class="fadeInUp-on-scroll">
-                    <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl mb-6">ABOUT US</h2>
-                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                        We are a leading company to manufacture and supply a wide range of pharmaceuticals to
-                        semi-regulated and non-regulated markets across the globe. We are located Delhi, and have been
-                        functioning in the industry since long.
-                    </p>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Our commitment to provide world class quality, competitive pricing & constant urge to explore
-                        new therapeutic segments and expand our product portfolio have gained us a reputation as a
-                        global manufacturer of world class quality medicines and pharmaceutical products.
-                    </p>
-                    <div class="mb-10 lg:mb-0">
-                        <a href="#contact" class="btn-primary px-8 py-3 rounded-md font-medium text-sm">Contact Us
-                            Today</a>
-                    </div>
-                </div>
-                <div class="relative mt-12 lg:mt-0 fadeInUp-on-scroll delay-200">
-                    <div class="img-wrap rounded-2xl shadow-xl">
-                        <img src="images/about section image.webp" alt="About Pharmacy"
-                            class="w-full h-auto object-cover rounded-2xl">
-                    </div>
-                </div>
+            <div class="ll-cta-actions fade-up">
+                <a class="btn btn-outline" href="contact.html">Send Enquiry</a>
+                <a class="btn ll-btn-whatsapp" href="https://wa.me/916003214247" target="_blank"
+                    rel="noopener noreferrer">WhatsApp Us <span aria-hidden="true">→</span></a>
             </div>
         </div>
     </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-16 bg-gray-50 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fadeInUp-on-scroll">
-                <h2 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">GALLERY</h2>
-            </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="img-wrap shadow-md rounded-xl h-64 fadeInUp-on-scroll delay-100">
-                    <img src="images/gallery/image1.jpg" alt="Gallery Image 1" class="w-full h-full object-cover">
-                </div>
-                <div class="img-wrap shadow-md rounded-xl h-64 fadeInUp-on-scroll delay-200">
-                    <img src="images/gallery/image2.webp" alt="Gallery Image 2" class="w-full h-full object-cover">
-                </div>
-                <div class="img-wrap shadow-md rounded-xl h-64 fadeInUp-on-scroll delay-300">
-                    <img src="images/gallery/image3.webp" alt="Gallery Image 3" class="w-full h-full object-cover">
-                </div>
-                <!-- Additions -->
-                <div class="img-wrap shadow-md rounded-xl h-64 fadeInUp-on-scroll delay-100">
-                    <img src="images/gallery/image4.png" alt="Gallery Image 4" class="w-full h-full object-cover">
-                </div>
-                <div class="img-wrap shadow-md rounded-xl h-64 fadeInUp-on-scroll delay-200">
-                    <img src="images/gallery/image5.png" alt="Gallery Image 5" class="w-full h-full object-cover">
-                </div>
-                <div class="img-wrap shadow-md rounded-xl h-64 fadeInUp-on-scroll delay-300">
-                    <img src="images/gallery/image6.png" alt="Gallery Image 6" class="w-full h-full object-cover">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Testimonials Section -->
-    <section class="py-20 bg-cover bg-center relative" style="background-image: url('images/Hero section image.jpg');">
-        <div class="absolute inset-0 bg-dark bg-opacity-80 mix-blend-multiply"></div>
-        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fadeInUp-on-scroll">
-                <h2 class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">TESTIMONIALS</h2>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
-                <div
-                    class="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-2xl border border-white border-opacity-20 text-center hover-scale fadeInUp-on-scroll delay-100">
-                    <img src="images/person1.webp" alt="Pankaj Sharma"
-                        class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-primary object-cover">
-                    <p class="text-white italic mb-4">"They provide very good quality of pharmaceutical products at very
-                        affordable rates."</p>
-                    <h4 class="text-primary font-bold text-lg">Pankaj Sharma</h4>
-                </div>
-                <!-- Testimonial 2 -->
-                <div
-                    class="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-2xl border border-white border-opacity-20 text-center hover-scale fadeInUp-on-scroll delay-200">
-                    <img src="images/person2.jpg" alt="Rahul Singh"
-                        class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-primary object-cover">
-                    <p class="text-white italic mb-4">"Very good range of products and they keep in mind their
-                        responsibility towards society as well."</p>
-                    <h4 class="text-primary font-bold text-lg">Rahul Singh</h4>
-                </div>
-                <!-- Testimonial 3 -->
-                <div
-                    class="bg-white bg-opacity-10 backdrop-blur-md p-8 rounded-2xl border border-white border-opacity-20 text-center hover-scale fadeInUp-on-scroll delay-300">
-                    <img src="images/person3.jpg" alt="Seema Khan"
-                        class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-primary object-cover">
-                    <p class="text-white italic mb-4">"I am extremely impressed with their range of pharmaceutical
-                        products."</p>
-                    <h4 class="text-primary font-bold text-lg">Seema Khan</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Videos Section -->
-    <section class="py-16 bg-white border-t border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12 fadeInUp-on-scroll">
-                <h2 class="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">VIDEOS</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="bg-gray-100 rounded-2xl p-2 shadow-sm fadeInUp-on-scroll delay-100">
-                    <iframe class="w-full h-64 sm:h-80 rounded-xl" src="https://www.youtube.com/embed/MqJ3zt_-Pao"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <h3 class="text-center mt-4 mb-2 font-semibold text-lg">What to Pack in Your Travel First Aid Kit
-                    </h3>
-                </div>
-                <div class="bg-gray-100 rounded-2xl p-2 shadow-sm fadeInUp-on-scroll delay-200">
-                    <iframe class="w-full h-64 sm:h-80 rounded-xl" src="https://www.youtube.com/embed/8assGpZvwG4"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <h3 class="text-center mt-4 mb-2 font-semibold text-lg">First Aid Kit Essentials</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-50 relative border-t border-gray-200">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16 fadeInUp-on-scroll">
-                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl uppercase">Contact Us</h2>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                <!-- Info -->
-                <div class="space-y-8 fadeInUp-on-scroll delay-100">
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <div
-                                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10 text-primary">
-                                <i class="fas fa-map-marker-alt text-xl"></i>
-                            </div>
-                        </div>
-                        <div class="ml-6">
-                            <h3 class="text-lg font-bold text-gray-900 mb-1">Our Office Address</h3>
-                            <p class="text-gray-600 text-base">S-134/267, Harijan Camp, Lodhi Road,<br>Near MC Market,
-                                New Delhi – 110003, Delhi, India</p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <div
-                                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10 text-primary">
-                                <i class="fas fa-envelope text-xl"></i>
-                            </div>
-                        </div>
-                        <div class="ml-6">
-                            <h3 class="text-lg font-bold text-gray-900 mb-1">General Enquiries</h3>
-                            <p class="text-gray-600 text-base"><a href="mailto:laytelifescience@gmail.com"
-                                    class="hover:text-primary transition-colors">laytelifescience@gmail.com</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <a href="tel:+916003214247" aria-label="Call Layte LifeScience">
-                                <div
-                                    class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10 text-primary hover:bg-opacity-20 transition-colors cursor-pointer">
-                                    <i class="fas fa-phone-alt text-xl"></i>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="ml-6">
-                            <h3 class="text-lg font-bold text-gray-900 mb-1">Call Us</h3>
-                            <p class="text-gray-600 text-base"><a href="tel:+916003214247"
-                                    class="hover:text-primary transition-colors">+91 6003214247</a></p>
-                        </div>
-                    </div>
-
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0">
-                            <div
-                                class="flex items-center justify-center h-12 w-12 rounded-full bg-primary bg-opacity-10 text-primary">
-                                <i class="fas fa-clock text-xl"></i>
-                            </div>
-                        </div>
-                        <div class="ml-6">
-                            <h3 class="text-lg font-bold text-gray-900 mb-1">Our Timing</h3>
-                            <p class="text-gray-600 text-base">Mon - Sun : 10:00 AM - 07:00 PM</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Form -->
-                <div
-                    class="bg-white shadow-lg rounded-2xl p-8 lg:p-12 border border-gray-100 fadeInUp-on-scroll delay-200">
-                    <form action="#" method="POST" class="space-y-6" id="contact-form" novalidate>
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700">Name <span
-                                    class="text-red-500">*</span></label>
-                            <input type="text" name="name" id="name" placeholder="Enter your full name"
-                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:ring-primary focus:border-primary transition-colors">
-                        </div>
-                        <div>
-                            <label for="mobile" class="block text-sm font-medium text-gray-700">Mobile Number <span
-                                    class="text-red-500">*</span></label>
-                            <input type="tel" name="mobile" id="mobile" placeholder="e.g. 98765 43210"
-                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:ring-primary focus:border-primary transition-colors">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700">Email <span class="text-gray-400 font-normal text-xs">(Optional)</span></label>
-                            <input type="email" name="email" id="email" placeholder="your@email.com (optional)"
-                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:ring-primary focus:border-primary transition-colors">
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Write your enquiry or message here..."
-                                class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:ring-primary focus:border-primary transition-colors"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit"
-                                class="w-full flex justify-center py-3 px-4 border border-transparent shadow-sm text-lg font-medium rounded-md text-white bg-primary hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-colors">
-                                Submit
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div class="mt-16 map-container shadow-md rounded-2xl fadeInUp-on-scroll delay-300">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.4286905503754!2d77.22395757541001!3d28.586913586150967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce31bb23a475f%3A0xfc6b092458539d4!2sHarijan%20Camp%20Lodhi%20Colony%20Near%20Police%20Station%20Staff%20Quater!5e0!3m2!1sen!2sin!4v1775904190401!5m2!1sen!2sin"
-                    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                    title="Layte LifeScience Location Map"
-                    aria-label="Map showing Layte LifeScience office at Harijan Camp, Lodhi Road, New Delhi"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer class="footer">
+        <div class="footer-main">
+            <!-- Brand Column -->
             <div class="mb-8 md:mb-0">
-                <img class="h-16 w-auto object-contain bg-white p-1 rounded-md mb-4" src="images/logo.jpeg"
-                    alt="Layte LifeScience Logo">
-                <p class="text-gray-400 text-sm">Providing world class quality medicines and pharmaceutical products.
-                </p>
+                <div class="footer-logo">
+                    <img src="images/logo1.png" alt="Layte LifeScience Logo">
+                </div>
+                <p class="text-white font-bold mb-2" style="font-size: 15px;">Quality Medicines, Delivered with Integrity.</p>
+                <p class="mb-6" style="color: rgba(255,255,255,0.6);">Trusted pharmaceutical supplier to hospitals, pharmacies, and distributors across India.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
             </div>
+
+            <!-- Quick Links -->
             <div>
-                <h4 class="text-lg font-bold mb-4 text-white">Quick Links</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="#home" class="hover:text-primary transition-colors">Home</a></li>
-                    <li><a href="#about" class="hover:text-primary transition-colors">About Us</a></li>
-                    <li><a href="#categories" class="hover:text-primary transition-colors">Products</a></li>
-                    <li><a href="#contact" class="hover:text-primary transition-colors">Contact</a></li>
-                </ul>
+                <h4>Quick Links</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="products.html">Products</a>
+                    <a href="quality.html">Quality</a>
+                    <a href="capabilities.html">Capabilities</a>
+                    <a href="contact.html">Contact</a>
+                </div>
             </div>
+
+            <!-- Product Categories -->
             <div>
-                <h4 class="text-lg font-bold mb-4 text-white">Follow Us</h4>
-                <div class="flex space-x-4">
-                    <a href="#"
-                        class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="#"
-                        class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="#"
-                        class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
-                            class="fab fa-instagram"></i></a>
-                    <a href="#"
-                        class="h-10 w-10 bg-gray-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary hover:text-white transition-colors"><i
-                            class="fab fa-linkedin-in"></i></a>
+                <h4>Product Categories</h4>
+                <div class="flex flex-col gap-2">
+                    <a href="products.html">Injectable Antibiotics</a>
+                    <a href="products.html">Antifungals</a>
+                    <a href="products.html">Syrups</a>
+                    <a href="products.html">Vaccines</a>
+                    <a href="products.html">Surgical Goods</a>
+                    <a href="products.html">Diagnostics</a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div>
+                <h4>Contact Info</h4>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>S-134/267, Harijan Camp, Lodhi Road, New Delhi – 110003</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+91 6003214247</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>+91 6003214247</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fas fa-envelope"></i>
+                    <span>laytelifescience@gmail.com</span>
+                </div>
+                <div class="footer-contact-item center">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon–Sun, 10:00 AM – 7:00 PM</span>
+                </div>
+                <div class="footer-cert-strip">
+                    <span class="footer-cert">WHO-GMP</span>
+                    <span class="footer-cert">DCGI</span>
+                    <span class="footer-cert">ISO 9001:2015</span>
                 </div>
             </div>
         </div>
-        <div
-            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-gray-800 text-center text-gray-400 text-sm">
-            <p>&copy; Copyrights 2026 - 2027. Layte LifeScience Private
-                Limited. All Rights Reserved.</p>
+
+        <div class="footer-bottom">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+                <p>&copy; 2026 Layte LifeScience Private Limited. All Rights Reserved.</p>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="#" style="margin-bottom: 0; color: inherit;">Privacy Policy</a>
+                    <span class="opacity-50">|</span>
+                    <span class="font-semibold tracking-wide">Made in India</span>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!-- ── Floating Action Buttons ─────────────────────────── -->
-    <div id="fab-container" style="
-        position: fixed;
-        bottom: 28px;
-        right: 24px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        gap: 14px;
-        z-index: 1000;
-    ">
-
-        <!-- WhatsApp Button -->
-        <div style="position: relative; display: flex; align-items: center;">
-            <!-- Tooltip -->
-            <span id="fab-wa-tip" style="
-                position: absolute;
-                right: 64px;
-                background: #1a1a1a;
-                color: #fff;
-                font-size: 13px;
-                font-weight: 600;
-                padding: 6px 12px;
-                border-radius: 8px;
-                white-space: nowrap;
-                opacity: 0;
-                pointer-events: none;
-                transition: opacity 0.2s ease;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            ">Chat on WhatsApp</span>
-
-            <!-- Pulse ring -->
-            <span style="
-                position: absolute;
-                inset: 0;
-                border-radius: 50%;
-                background: rgba(37,211,102,0.4);
-                animation: fab-pulse 2s ease-out infinite;
-                pointer-events: none;
-            "></span>
-
-            <a id="fab-whatsapp"
-               href="https://wa.me/916003214247"
-               target="_blank"
-               rel="noopener noreferrer"
-               aria-label="Chat on WhatsApp"
-               onmouseenter="document.getElementById('fab-wa-tip').style.opacity='1'"
-               onmouseleave="document.getElementById('fab-wa-tip').style.opacity='0'"
-               style="
-                position: relative;
-                width: 56px;
-                height: 56px;
-                border-radius: 50%;
-                background: #25d366;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 0 6px 20px rgba(37,211,102,0.45);
-                transition: transform 0.2s ease, box-shadow 0.2s ease;
-                text-decoration: none;
-               "
-               onmouseenter="this.style.transform='scale(1.12)';this.style.boxShadow='0 10px 28px rgba(37,211,102,0.55)'"
-               onmouseleave="this.style.transform='scale(1)';this.style.boxShadow='0 6px 20px rgba(37,211,102,0.45)'"
-            >
-                <i class="fab fa-whatsapp" style="color:#fff; font-size:28px; line-height:1;"></i>
+    <div class="ll-fab-container">
+        <!-- WhatsApp FAB -->
+        <div class="fab-wa-wrapper" style="position: relative;">
+            <div class="fab-pulse"></div>
+            <a href="https://wa.me/916003214247" target="_blank" rel="noopener noreferrer" class="ll-fab ll-fab-wa" aria-label="Chat on WhatsApp">
+                <i class="fab fa-whatsapp"></i>
             </a>
         </div>
 
-        <!-- Call Button -->
-        <div style="position: relative; display: flex; align-items: center;">
-            <!-- Tooltip -->
-            <span id="fab-ct-tip" style="
-                position: absolute;
-                right: 64px;
-                background: #1a1a1a;
-                color: #fff;
-                font-size: 13px;
-                font-weight: 600;
-                padding: 6px 12px;
-                border-radius: 8px;
-                white-space: nowrap;
-                opacity: 0;
-                pointer-events: none;
-                transition: opacity 0.2s ease;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            ">Call Us Now</span>
-
-            <a id="fab-contact"
-               href="tel:+916003214247"
-               aria-label="Call Layte LifeScience"
-               onmouseenter="document.getElementById('fab-ct-tip').style.opacity='1'"
-               onmouseleave="document.getElementById('fab-ct-tip').style.opacity='0'"
-               style="
-                width: 56px;
-                height: 56px;
-                border-radius: 50%;
-                background: #11b3c3;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                box-shadow: 0 6px 20px rgba(17,179,195,0.45);
-                transition: transform 0.2s ease, box-shadow 0.2s ease;
-                text-decoration: none;
-               "
-               onmouseenter="this.style.transform='scale(1.12)';this.style.boxShadow='0 10px 28px rgba(17,179,195,0.55)'"
-               onmouseleave="this.style.transform='scale(1)';this.style.boxShadow='0 6px 20px rgba(17,179,195,0.45)'"
-            >
-                <i class="fas fa-phone-alt" style="color:#fff; font-size:22px; line-height:1;"></i>
+        <!-- Phone FAB -->
+        <div class="fab-tel-wrapper">
+            <a href="tel:+916003214247" class="ll-fab ll-fab-tel" aria-label="Call Layte LifeScience">
+                <i class="fas fa-phone-alt"></i>
             </a>
         </div>
     </div>
-
-    <!-- FAB Animation Styles -->
-    <style>
-        @keyframes fab-pulse {
-            0%   { transform: scale(1);   opacity: 0.7; }
-            70%  { transform: scale(1.7); opacity: 0; }
-            100% { transform: scale(1.7); opacity: 0; }
-        }
-
-        /* Entrance slide-in from right */
-        #fab-container {
-            animation: fab-slidein 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.8s both;
-        }
-        @keyframes fab-slidein {
-            from { opacity: 0; transform: translateX(80px); }
-            to   { opacity: 1; transform: translateX(0); }
-        }
-
-        /* Mobile: slightly smaller */
-        @media (max-width: 480px) {
-            #fab-container { bottom: 18px; right: 14px; gap: 10px; }
-            #fab-whatsapp,
-            #fab-contact   { width: 50px !important; height: 50px !important; }
-        }
-    </style>
 
     <!-- Javascript -->
     <script src="js/main.js"></script>
