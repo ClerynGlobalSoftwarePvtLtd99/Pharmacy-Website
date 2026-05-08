@@ -133,9 +133,13 @@ Limited is a top and well known Pharmaceutical Products Dealer  Delhi. Quality d
     <!-- SECTION 1 — HERO (full screen) -->
     <header id="home" class="hero ll-hero">
         <div class="hero-bg ll-hero-bg" aria-hidden="true">
-            <video autoplay loop muted playsinline poster="images/Hero section image.jpg"
-                style="width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0; z-index: 0;">
-                <source src="images/hero-video.mp4" type="video/mp4">
+            <!-- Desktop Hero Video - Professional & Authoritative -->
+            <video class="hero-video-desktop" autoplay loop muted playsinline poster="images/Hero section image.jpg">
+                <source src="videos/desktop/patient-laugh-trust-desktop.mp4" type="video/mp4">
+            </video>
+            <!-- Mobile Hero Video - Trust Building -->
+            <video class="hero-video-mobile" autoplay loop muted playsinline poster="images/Hero section image for mobile.jpg">
+                <source src="videos/mobile/trust-mobile.mp4" type="video/mp4">
             </video>
         </div>
         <div class="hero-content ll-hero-content text-center">
@@ -198,8 +202,15 @@ Limited is a top and well known Pharmaceutical Products Dealer  Delhi. Quality d
                     <a class="ll-link-cta" href="contact.html">Read Our Full Story <span aria-hidden="true">→</span></a>
                 </div>
                 <div class="fade-up">
-                    <div class="ll-about-image">
-                        <img src="images/about section image.webp" alt="Layte LifeScience team and facility">
+                    <div class="ll-about-video">
+                        <!-- Desktop: Emotional Connection Video -->
+                        <video class="about-video-desktop" autoplay loop muted playsinline poster="images/about section image.webp">
+                            <source src="videos/desktop/child-trust-desktop.mp4" type="video/mp4">
+                        </video>
+                        <!-- Mobile: Pediatric Care Focus -->
+                        <video class="about-video-mobile" autoplay loop muted playsinline poster="images/about section image.webp">
+                            <source src="videos/mobile/syrup-child-mobile.mp4" type="video/mp4">
+                        </video>
                     </div>
                 </div>
             </div>
@@ -217,18 +228,27 @@ Limited is a top and well known Pharmaceutical Products Dealer  Delhi. Quality d
 
             <div class="ll-category-grid">
                 <article class="ll-category-card fade-up">
+                    <div class="ll-cat-image">
+                        <img src="images/categories/vaccines_serums.png" alt="Injectable Antibiotics" loading="lazy">
+                    </div>
                     <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-syringe"></i></div>
                     <h3 class="ll-cat-title">Injectable Antibiotics</h3>
                     <p class="ll-cat-desc">Sterile injectables for hospital-grade infection management.</p>
                     <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
                 </article>
                 <article class="ll-category-card fade-up">
+                    <div class="ll-cat-image">
+                        <img src="images/products/image2.avif" alt="Antifungal Creams" loading="lazy">
+                    </div>
                     <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-bandage"></i></div>
                     <h3 class="ll-cat-title">Antifungal Creams</h3>
                     <p class="ll-cat-desc">Topicals formulated for effective dermatological care.</p>
                     <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
                 </article>
                 <article class="ll-category-card fade-up">
+                    <div class="ll-cat-image">
+                        <img src="images/products/image3.avif" alt="Pharmaceutical Syrups" loading="lazy">
+                    </div>
                     <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-prescription-bottle-medical"></i>
                     </div>
                     <h3 class="ll-cat-title">Pharmaceutical Syrups</h3>
@@ -236,30 +256,45 @@ Limited is a top and well known Pharmaceutical Products Dealer  Delhi. Quality d
                     <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
                 </article>
                 <article class="ll-category-card fade-up">
+                    <div class="ll-cat-image">
+                        <img src="images/products/image3.avif" alt="Tonics & Supplements" loading="lazy">
+                    </div>
                     <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-capsules"></i></div>
                     <h3 class="ll-cat-title">Tonics &amp; Supplements</h3>
                     <p class="ll-cat-desc">Nutraceutical and wellness range for daily support.</p>
                     <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
                 </article>
                 <article class="ll-category-card fade-up">
+                    <div class="ll-cat-image">
+                        <img src="images/products/image4.avif" alt="Eye & Ear Drops" loading="lazy">
+                    </div>
                     <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></div>
                     <h3 class="ll-cat-title">Eye &amp; Ear Drops</h3>
                     <p class="ll-cat-desc">Specialized drops for ophthalmic and otic needs.</p>
                     <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
                 </article>
                 <article class="ll-category-card fade-up">
+                    <div class="ll-cat-image">
+                        <img src="images/categories/surgical_goods.png" alt="Surgical Goods & Devices" loading="lazy">
+                    </div>
                     <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-kit-medical"></i></div>
                     <h3 class="ll-cat-title">Surgical Goods &amp; Devices</h3>
                     <p class="ll-cat-desc">Essential disposables and devices for clinical use.</p>
                     <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
                 </article>
                 <article class="ll-category-card fade-up">
+                    <div class="ll-cat-image">
+                        <img src="images/categories/vaccines_serums.png" alt="Vaccines & Serums" loading="lazy">
+                    </div>
                     <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-shield-virus"></i></div>
                     <h3 class="ll-cat-title">Vaccines &amp; Serums</h3>
                     <p class="ll-cat-desc">Cold-chain sensitive supplies with verified handling.</p>
                     <a class="ll-cat-link" href="products.html">View Products <span aria-hidden="true">→</span></a>
                 </article>
                 <article class="ll-category-card fade-up">
+                    <div class="ll-cat-image">
+                        <img src="images/categories/image1.webp" alt="Diagnostic Products" loading="lazy">
+                    </div>
                     <div class="ll-cat-icon" aria-hidden="true"><i class="fa-solid fa-vial"></i></div>
                     <h3 class="ll-cat-title">Diagnostic Products</h3>
                     <p class="ll-cat-desc">Trusted diagnostic essentials for accurate testing workflows.</p>
@@ -434,7 +469,90 @@ Limited is a top and well known Pharmaceutical Products Dealer  Delhi. Quality d
         </div>
     </section>
 
-    <!-- SECTION 8 — CTA BANNER (#1B5E9B background) -->
+    <!-- SECTION 8 — PATIENT SUCCESS VIDEO (white background) -->
+    <section class="section section--white ll-patient-success" aria-label="Patient success stories">
+        <div class="container">
+            <div class="ll-section-heading text-center fade-up">
+                <h2>Transforming Lives Through Quality Healthcare</h2>
+                <p>Real stories of hope and healing made possible through our trusted pharmaceutical solutions</p>
+            </div>
+
+            <div class="ll-patient-video-container fade-up">
+                <!-- Desktop: Patient Success & Trust Video -->
+                <video class="patient-video-desktop" autoplay loop muted playsinline poster="images/testimonial image.webp">
+                    <source src="videos/desktop/hero-trust-desktop.mp4" type="video/mp4">
+                </video>
+                <!-- Mobile: Product Innovation Video -->
+                <video class="patient-video-mobile" autoplay loop muted playsinline poster="images/testimonial image.webp">
+                    <source src="videos/mobile/rotating-medicine-mobile.mp4" type="video/mp4">
+                </video>
+                
+                <div class="ll-patient-overlay">
+                    <div class="ll-patient-content">
+                        <h3>Delivering Hope, One Patient at a Time</h3>
+                        <p>Our commitment to quality medicines ensures better health outcomes for communities across India</p>
+                        <div class="ll-patient-stats">
+                            <div class="ll-stat-mini">
+                                <div class="ll-stat-number-mini">1000+</div>
+                                <div class="ll-stat-label-mini">Institutional Clients</div>
+                            </div>
+                            <div class="ll-stat-mini">
+                                <div class="ll-stat-number-mini">500+</div>
+                                <div class="ll-stat-label-mini">Quality Products</div>
+                            </div>
+                            <div class="ll-stat-mini">
+                                <div class="ll-stat-number-mini">20+</div>
+                                <div class="ll-stat-label-mini">States Served</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9 — FACILITY GALLERY (#F5F5F0 background) -->
+    <section class="section section--bg ll-facility-gallery" aria-label="Our facility and operations">
+        <div class="container">
+            <div class="ll-section-heading text-center fade-up">
+                <h2>Our State-of-the-Art Facilities</h2>
+                <p>Glimpse into our commitment to quality and excellence in pharmaceutical distribution</p>
+            </div>
+
+            <div class="ll-gallery-grid fade-up">
+                <div class="ll-gallery-item">
+                    <img src="images/gallery/image1.jpg" alt="Quality Control Laboratory" loading="lazy">
+                    <div class="ll-gallery-overlay">
+                        <h4>Quality Control Lab</h4>
+                        <p>Stringent testing protocols for every product</p>
+                    </div>
+                </div>
+                <div class="ll-gallery-item">
+                    <img src="images/gallery/image2.webp" alt="Storage Facility" loading="lazy">
+                    <div class="ll-gallery-overlay">
+                        <h4>Climate-Controlled Storage</h4>
+                        <p>Optimal conditions for medicine preservation</p>
+                    </div>
+                </div>
+                <div class="ll-gallery-item">
+                    <img src="images/gallery/image3.webp" alt="Packaging Area" loading="lazy">
+                    <div class="ll-gallery-overlay">
+                        <h4>Professional Packaging</h4>
+                        <p>Secure and compliant packaging standards</p>
+                    </div>
+                </div>
+                <div class="ll-gallery-item">
+                    <img src="images/gallery/image4.png" alt="Distribution Center" loading="lazy">
+                    <div class="ll-gallery-overlay">
+                        <h4>Modern Distribution Center</h4>
+                        <p>Efficient logistics for timely delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10 — CTA BANNER (#1B5E9B background) -->
     <section class="ll-cta-banner" aria-label="Primary call to action">
         <div class="container ll-cta-inner">
             <div class="fade-up">
