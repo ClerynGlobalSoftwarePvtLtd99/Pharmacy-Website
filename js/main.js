@@ -3,14 +3,44 @@
    ======================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-
-  /* ── Sticky nav shadow ─────────────────────────────── */
   const navbar = document.querySelector('.navbar');
-  if (navbar) {
-    window.addEventListener('scroll', () => {
-      navbar.classList.toggle('scrolled', window.scrollY > 40);
-    }, { passive: true });
-  }
+
+  if (!navbar) return;
+
+  let lastScrollY = window.scrollY;
+  const threshold = 12;
+
+  window.addEventListener(
+    'scroll',
+    () => {
+      const currentScrollY = window.scrollY;
+
+      // Shadow effect
+      navbar.classList.toggle('scrolled', currentScrollY > 40);
+
+      // Always visible near top
+      if (currentScrollY <= 40) {
+        navbar.classList.remove('nav-hidden');
+        lastScrollY = currentScrollY;
+        return;
+      }
+
+      const diff = currentScrollY - lastScrollY;
+
+      if (Math.abs(diff) < threshold) return;
+
+      if (diff > 0) {
+        // Scrolling down
+        navbar.classList.add('nav-hidden');
+      } else {
+        // Scrolling up
+        navbar.classList.remove('nav-hidden');
+      }
+
+      lastScrollY = currentScrollY;
+    },
+    { passive: true }
+  );
 
   /* ── Mobile menu ───────────────────────────────────── */
   const hamburger = document.getElementById('mobile-menu-button');
@@ -49,6 +79,131 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.nav-link[data-page], .nav-mobile-link[data-page]').forEach(link => {
     if (link.dataset.page === currentPage) link.classList.add('active');
   });
+
+  /* ── Hero Slider ────────────────────────────────────── */
+  const slides = document.querySelectorAll('.hero-slide');
+  if (slides.length > 0) {
+    let currentIndex = 0;
+    let slideTimeout;
+
+    // Initialize video end listeners
+    slides.forEach((slide) => {
+      if (slide.dataset.type === 'video') {
+        const video = slide.querySelector('video');
+        if (video) {
+          video.addEventListener('ended', () => {
+            if (slide.classList.contains('active')) {
+              nextSlide();
+            }
+          });
+        }
+      }
+    });
+
+    function showSlide(index) {
+      clearTimeout(slideTimeout);
+
+      const currentSlide = slides[currentIndex];
+      if (currentSlide) {
+        currentSlide.classList.remove('active');
+        if (currentSlide.dataset.type === 'video') {
+          const video = currentSlide.querySelector('video');
+          if (video) {
+            video.pause();
+            video.removeAttribute('src');
+            video.removeAttribute('autoplay');
+            try {
+              video.load();
+            } catch (e) { }
+          }
+        }
+      }
+
+      currentIndex = index;
+      if (currentIndex >= slides.length) currentIndex = 0;
+      if (currentIndex < 0) currentIndex = slides.length - 1;
+
+      const nextSlideEl = slides[currentIndex];
+      nextSlideEl.classList.add('active');
+
+      if (nextSlideEl.dataset.type === 'video') {
+        const video = nextSlideEl.querySelector('video');
+        if (video) {
+          const isMobile = window.innerWidth < 768;
+          const videoSrc = isMobile
+            ? 'videos/mobile/trust-mobile.mp4'
+            : 'videos/desktop/patient-laugh-trust-desktop1.mp4';
+          const posterSrc = isMobile
+            ? 'images/Hero section image for mobile.jpg'
+            : 'images/Hero section image.jpg';
+
+          video.poster = posterSrc;
+          video.src = videoSrc;
+          video.autoplay = true;
+          video.muted = true;
+          video.playsInline = true;
+
+          try {
+            video.load();
+            const playPromise = video.play();
+            if (playPromise !== undefined) {
+              playPromise.then(() => {
+                console.log('Video started playing successfully');
+              }).catch(err => {
+                console.log('Video play failed:', err);
+                slideTimeout = setTimeout(nextSlide, 8000);
+              });
+            }
+          } catch (err) {
+            console.log('Video load error:', err);
+            slideTimeout = setTimeout(nextSlide, 8000);
+          }
+        } else {
+          slideTimeout = setTimeout(nextSlide, 5000);
+        }
+      } else {
+        const duration = parseInt(nextSlideEl.dataset.duration, 10) || 5000;
+        slideTimeout = setTimeout(nextSlide, duration);
+      }
+    }
+
+    function nextSlide() {
+      showSlide(currentIndex + 1);
+    }
+
+    showSlide(0);
+
+    let resizeTimeout;
+    window.addEventListener('resize', () => {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(() => {
+        const activeSlide = slides[currentIndex];
+        if (activeSlide && activeSlide.dataset.type === 'video') {
+          const video = activeSlide.querySelector('video');
+          if (video) {
+            const isMobile = window.innerWidth < 768;
+            const expectedSrc = isMobile
+              ? 'videos/mobile/trust-mobile.mp4'
+              : 'videos/desktop/patient-laugh-trust-desktop1.mp4';
+
+            const currentSrc = video.getAttribute('src');
+            if (currentSrc !== expectedSrc) {
+              video.poster = isMobile
+                ? 'images/Hero section image for mobile.jpg'
+                : 'images/Hero section image.jpg';
+              video.src = expectedSrc;
+              video.muted = true;
+              video.playsInline = true;
+              try {
+                video.load();
+                video.play().catch(e => console.log(e));
+              } catch (e) { }
+            }
+          }
+        }
+      }, 250);
+    });
+  }
 
   /* ── Scroll fade-up animations ─────────────────────── */
   const observer = new IntersectionObserver(entries => {
@@ -134,11 +289,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let submitted = false;
 
     const rules = {
-      name:    { re: /.{2,}/,              msg: 'Please enter your full name.' },
-      company: { re: /.{1,}/,              msg: 'Please enter your company name.', optional: true },
-      mobile:  { re: /^[6-9]\d{9}$/,       msg: 'Enter a valid 10-digit mobile number.' },
-      email:   { re: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, msg: 'Enter a valid email address.', optional: true },
-      message: { re: /.{10,}/,             msg: 'Message must be at least 10 characters.' },
+      name: { re: /.{2,}/, msg: 'Please enter your full name.' },
+      company: { re: /.{1,}/, msg: 'Please enter your company name.', optional: true },
+      mobile: { re: /^[6-9]\d{9}$/, msg: 'Enter a valid 10-digit mobile number.' },
+      email: { re: /^[^\s@]+@[^\s@]+\.[^\s@]+$/, msg: 'Enter a valid email address.', optional: true },
+      message: { re: /.{10,}/, msg: 'Message must be at least 10 characters.' },
     };
 
     function validateField(id) {
@@ -166,13 +321,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (e) e.remove();
     }
 
-    ['name','company','mobile','email','message'].forEach(id => {
+    ['name', 'company', 'mobile', 'email', 'message'].forEach(id => {
       document.getElementById(id)?.addEventListener('input', () => { if (submitted) validateField(id); });
     });
 
     form.addEventListener('submit', e => {
       e.preventDefault(); submitted = true;
-      const valid = ['name','company','mobile','email','message'].map(validateField).every(Boolean);
+      const valid = ['name', 'company', 'mobile', 'email', 'message'].map(validateField).every(Boolean);
       if (!valid) { form.querySelector('[style*="border-color: rgb(239"]')?.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
 
       const get = id => document.getElementById(id)?.value.trim() || '';
@@ -190,13 +345,13 @@ document.addEventListener('DOMContentLoaded', () => {
 💬 *Message:*
 ${get('message')}
 ━━━━━━━━━━━━━━━━━━━━━━━
-🕐 *Received:* ${now.toLocaleDateString('en-IN', { day:'2-digit', month:'short', year:'numeric' })} at ${now.toLocaleTimeString('en-IN', { hour:'2-digit', minute:'2-digit', hour12:true })}
+🕐 *Received:* ${now.toLocaleDateString('en-IN', { day: '2-digit', month: 'short', year: 'numeric' })} at ${now.toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true })}
 📍 *Source:* Website Contact Form`;
 
       window.open(`https://wa.me/${WANUM}?text=${encodeURIComponent(msg)}`, '_blank');
       showToast('✅ Opening WhatsApp with your enquiry!');
       form.reset(); submitted = false;
-      ['name','company','mobile','email','message'].forEach(clearErr);
+      ['name', 'company', 'mobile', 'email', 'message'].forEach(clearErr);
     });
   }
 
@@ -207,7 +362,7 @@ ${get('message')}
     const t = document.createElement('div');
     t.id = 'toast';
     t.textContent = msg;
-    Object.assign(t.style, { position:'fixed', bottom:'32px', left:'50%', transform:'translateX(-50%)', background:getComputedStyle(document.documentElement).getPropertyValue('--navy'), color:'#fff', padding:'14px 28px', borderRadius:'50px', fontSize:'15px', fontWeight:'600', boxShadow:'0 8px 30px rgba(0,0,0,0.25)', zIndex:'9999', opacity:'0', transition:'opacity 0.3s ease', whiteSpace:'nowrap' });
+    Object.assign(t.style, { position: 'fixed', bottom: '32px', left: '50%', transform: 'translateX(-50%)', background: getComputedStyle(document.documentElement).getPropertyValue('--navy'), color: '#fff', padding: '14px 28px', borderRadius: '50px', fontSize: '15px', fontWeight: '600', boxShadow: '0 8px 30px rgba(0,0,0,0.25)', zIndex: '9999', opacity: '0', transition: 'opacity 0.3s ease', whiteSpace: 'nowrap' });
     document.body.appendChild(t);
     requestAnimationFrame(() => t.style.opacity = '1');
     setTimeout(() => { t.style.opacity = '0'; setTimeout(() => t.remove(), 400); }, 3500);
