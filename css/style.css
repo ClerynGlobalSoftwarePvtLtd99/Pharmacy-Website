@@ -1338,6 +1338,9 @@ body p {
   position: sticky;
   top: 72px;
   z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: rgba(255, 255, 255, 0.86);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(13, 46, 74, 0.10);
@@ -2030,12 +2033,20 @@ body p {
   color: #E8402A;
 }
 
+.ll-contact-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .ll-contact-map iframe {
   width: 100%;
+  max-width: 1600px;
   height: 100%;
-  min-height: 400px;
-  border-radius: 14px;
-  box-shadow: 0 10px 26px rgba(15, 23, 42, 0.25);
+  border: 0;
+  margin: 0 auto;
+  display: block;
 }
 
 @media (max-width: 1024px) {
