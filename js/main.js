@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!navbar) return;
 
+  // Start with navbar hidden
+  navbar.classList.add('nav-hidden');
+
   let lastScrollY = window.scrollY;
   const threshold = 12;
 
@@ -18,22 +21,18 @@ document.addEventListener('DOMContentLoaded', () => {
       // Shadow effect
       navbar.classList.toggle('scrolled', currentScrollY > 40);
 
-      // Always visible near top
-      if (currentScrollY <= 40) {
-        navbar.classList.remove('nav-hidden');
-        lastScrollY = currentScrollY;
+      const diff = currentScrollY - lastScrollY;
+
+      if (Math.abs(diff) < threshold) {
+        // Not enough movement
         return;
       }
 
-      const diff = currentScrollY - lastScrollY;
-
-      if (Math.abs(diff) < threshold) return;
-
       if (diff > 0) {
-        // Scrolling down
+        // Scrolling down - keep hidden
         navbar.classList.add('nav-hidden');
       } else {
-        // Scrolling up
+        // Scrolling up - show navbar
         navbar.classList.remove('nav-hidden');
       }
 
